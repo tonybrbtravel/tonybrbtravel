@@ -1,0 +1,40 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+
+.delete-trip {
+    .content {
+        min-height: auto !important;
+        @media (max-width: 767px) {
+            font-size: 24px !important;
+        }
+        strong {
+            color: @brbPink;
+        }
+        .delete-trip-buttons {
+            display: flex;
+            .delete-trip-yes {
+                width: 100%;
+                background-color: #fff !important;
+                color: @brbPink;
+                border: 2px solid @brbPink!important;
+                &:hover {
+                    background-color: #fff !important;
+                    color: @brbPink;
+                }
+            }
+            .delete-trip-no {
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+}

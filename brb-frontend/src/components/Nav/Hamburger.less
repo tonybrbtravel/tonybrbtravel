@@ -1,0 +1,40 @@
+.menu {
+  width: 30px;
+  height: 3px;
+  position: relative;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    top: -8px;
+    position: absolute;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    top: 8px;
+    position: absolute;
+    background-color: #ffffff;
+  }
+}
+.wrapper {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 18px;
+  background-color: #ffffff;
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

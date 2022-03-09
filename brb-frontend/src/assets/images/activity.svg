@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 41" width="50" height="41">
+	<title>landscape-fill@2x</title>
+	<defs>
+		<image  width="35" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAeCAMAAACR41cYAAAAAXNSR0IB2cksfwAAAFdQTFRFAAAAGxsqGRktGRkuGhouGhotGBgoGxsuGhouGhouGBgsEBAwICAwGRkuGxsuGBgtGhouGhouGRkuGhotGBgwGRktGxstEBAgGhouFRUqGRktGRkuGRktdwMQpgAAAB10Uk5TADC/38+fIO//30AQEG+QYIDvcK8gUGAQfzCPoK/eZCs+AAAA30lEQVR4nH2RWQKDIAxEEUsMaOtSpXa5/zkrKBJkmT9g5hkzjDFW8fomgJVUNbhJFk0SrXgJg4cKHuU8bd7THZaa3N2v/sfu6f0N4HAlGdM4kYsnjtGH56Wnd3rLRKBQL7OMsbzT1Y4nkm+tG3jXO2HRgxs4v3e5/4t2K0UVYxA/buAMCMzb9i8LYha0HsmuwRwIzuRAQDrwiDPZ1d4jExgL6gloijF7knsPqVYFSXIi1cowmQJpDJMpkKQek/ySI8QY28hMFinOFqggXCS4Fqh+USNwtUSNKL++IEkb4X/38hKcH/ulDQAAAABJRU5ErkJggg=="/>
+		<image  width="20" height="29" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAMAAACdWLz3AAAAAXNSR0IB2cksfwAAAHVQTFRFAAAA50Bg6kVg6UZg6UVg6UVg6UVg30Bg5EBg50Jg70Bg50Rg50Rg6EVg50Vg6kVg6kRg6Edg5kZg6kVg6kRg50Vg6UZg6UZg50hg6ERg6URg6UNg6URg6kZh6EVg6kZg6UVg6kVg6ENg6kVg6URg70Jj6UVgMj33vwAAACd0Uk5TACC/39//7xAwYBBAgJBgb+9wUJ+/wK9/IHCvUM9fv4+f75AwgB+gC4GNDQAAANNJREFUeJxlkdkWgjAMRLsFkaUgoBZQ3P3/TzRNodCaB8i5J0xmAmNLcSEFZ1EpAEh2IUvB1j6EGcE8+rxAVsaaLNfxnN2tI1bVVvEQjtEWSDasqWGuVZSDL7VE4hilVBFtATpG5CjxcbLGzgDSuIy9GWZlLfExLmv0xb2NdhEB6ERmLMycMHbpryH/TjzWG5euUsEN+kmuW9jiVDZEsop8TMHlbzYUebh7hqEe5K1ef2eFdhrqnhjVsReyt88gXDd5Rv2HGiO/Xr33A9lqI+u03fQDRFcJeay3F8UAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="6" y="5" />
+	<use id="Layer 1" href="#img2" x="29" y="12" />
+</svg>

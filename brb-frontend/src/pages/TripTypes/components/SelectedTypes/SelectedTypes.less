@@ -1,0 +1,30 @@
+@type: "global";
+@element: "site";
+@import (multiple) "../../../../semantic-ui/theme.config";
+& {
+  .selected-type {
+    & .ui.basic.red.buttons .button,
+    & .ui.basic.red.button {
+      margin-bottom: 15px !important;
+      width: 169px !important;
+      text-align: left;
+      background: #fff;
+      border-radius: 4px !important;
+      color: @brbPink !important;
+    }
+
+    & .ui.button:not(.red.labeled) {
+      margin-bottom: 15px !important;
+      width: 169px !important;
+      text-align: left;
+      height: 36px;
+      background-color: rgba(233, 69, 96, 0.15) !important;
+      border: 1px dashed @brbPink !important;
+      border-radius: 4px !important;
+    }
+
+    & .icon {
+      background: none !important;
+    }
+  }
+}

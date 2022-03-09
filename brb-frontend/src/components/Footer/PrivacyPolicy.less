@@ -1,0 +1,42 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.terms-policy {
+  width: 100%;
+  padding: @mediumSpacer 0;
+  background-color: @white;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    text-align: justify;
+  }
+  ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: lower-roman;
+      ol {
+        list-style-type: decimal
+      }
+    }
+  }
+  li {
+    margin-bottom: .5em;
+  }
+  a {
+    color: @brbPink;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}

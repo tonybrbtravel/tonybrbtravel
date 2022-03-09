@@ -1,0 +1,222 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+.slider-still-not-sure {
+  background-color: @brbBlue;
+  color: @brbOffwhite;
+
+  .slider-image-content .swiper-slide img {
+    min-height: 350px;
+    filter: brightness(0.5);
+    @media (max-width:767px) {
+      min-height: 250px;
+    }
+  }
+  @media (max-width: 767px) {
+    .ui.container {
+      margin-left: 0rem !important;
+      margin-right: 0rem !important;
+    }
+    .ui.grid {
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+  }
+  .not-sure-heading {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+  .ui.header {
+    color: @brbOffwhite;
+    max-width: 600px;
+    font-size: 2rem;
+    .sub.header {
+      margin-top: 15px;
+      color: @brbOffwhite;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.rating-block {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  z-index: 9;
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  span {
+    font-size: 16px;
+    display: block;
+    margin: 15px 0 15px;
+  }
+  @media (max-width:767px) {
+    font-size: 14px;
+    right: 10px;
+    span {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  }
+}
+.ui.card.not-sure {
+  @media (max-width:767px) {
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none!important;
+
+  }
+  .ui.header {
+    font-size: 2rem !important;
+    margin-bottom: 20px;
+    font-weight: 700;
+    @media (max-width:767px) {
+      text-align: left;
+      font-size: 20px !important;
+      margin-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  p{
+    font-size: 16px;
+    color: @brbBlue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    @media (max-width:767px) {
+      font-size: 16px;
+
+    }
+  }
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 4px;
+  min-height: 350px;
+  .brb-button {
+    margin: 10px 0;
+    min-width: 280px;
+    font-size: 18px;
+    small {
+      display: block;
+      font-size: 10px;
+
+    }
+  }
+  .action-items {
+    text-align: center;
+    margin-left: -1.5rem;
+  }
+
+}
+
+.slider-image-content {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  @media (max-width:767px) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .ui.header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    .content {
+      margin-left: 10px;
+      span {
+        span {
+          font-size: 12px;
+          font-weight: normal;
+          text-decoration: underline;
+        }
+      }
+    }
+    @media (max-width:767px) {
+      font-size: 24px;
+      position: relative;
+      .content {
+        padding-left: 22px;
+      }
+      svg {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 300px !important;
+    opacity: 0.5;
+    @media (max-width:767px) {
+      width: 100% !important;
+      height: 250px !important;
+    }
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .brb-swiper {
+    padding: 1.5rem 3rem 5.5rem 4.5rem;
+
+    @media (max-width:767px) {
+      padding: 1.5rem 7rem 1.5rem 3rem;
+    }
+
+    &::after {
+      content: " ";
+      height: 100%;
+      width: 120px;
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 0;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 0;
+      z-index: 3;
+      cursor: pointer;
+      height: 100%;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--prev {
+        left: 10px;
+      }
+
+      &--next {
+        right: 10px;
+      }
+
+      &.swiper-button-disabled {
+        opacity: 0.3;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+/*******************************
+         Site Overrides
+*******************************/
+.travel-profile-progress-bar {
+    border: 1px solid yellow;
+}

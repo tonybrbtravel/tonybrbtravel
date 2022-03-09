@@ -1,0 +1,112 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+.what-next {
+  color: black;
+  padding: 50px;
+  @media (max-width: 767px) {
+    padding: 0;
+    width: 280px;
+    h3 {
+      font-size: 24px !important;
+
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p{
+    font-size: 16px;
+    @media (max-width: 767px) {
+      text-align: justify;
+    }
+  }
+}
+.content-slider-trip-next {
+  background: @brbOffwhite;
+  .content-slider-trip .brb-swiper__nav {
+    top: -165px;
+    @media (max-width: 767px) {
+      top: -95px;
+    }
+  }
+  .brb-swiper__nav--next {
+      right: 32px;
+  }
+  @media (max-width: 767px) {
+    .ui.container {
+      margin-left: 0rem !important;
+      margin-right: 0rem !important;
+    }
+    .ui.grid {
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+  }
+}
+.content-slider-trip {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media (max-width: 767px) {
+    margin-top:25px;
+    margin-bottom: 25px;
+    padding: 0px;
+  }
+  .ui.header {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+    .sub-header {
+      color: @brbBlue;
+      font-size: 16px;
+      margin-top: 15px;
+
+    }
+    .sub-headers {
+      color: @brbBlue;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+  .brb-button {
+    margin: 20px 0;
+    width: 200px;
+    small {
+      display: block;
+    }
+  }
+  .brb-swiper {
+    &__nav {
+      position: absolute;
+      top: -162px;
+      z-index: 3;
+      cursor: pointer;
+      height: 100%;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  h2 {
+    strong {
+      color: @brbPink;
+    }
+  }
+  @media (max-width: 767px) {
+    .what-happens-content {
+      margin-top: 0rem !important;
+    }
+  }
+}

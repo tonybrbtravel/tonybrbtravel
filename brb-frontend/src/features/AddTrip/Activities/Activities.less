@@ -1,0 +1,19 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+& {
+  .select-activities {
+    .brb-checkbox-activities {
+      flex-wrap: wrap !important;
+      display: flex;
+    }
+  }
+}

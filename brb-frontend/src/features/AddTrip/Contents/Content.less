@@ -1,0 +1,314 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+
+@import (multiple) "../../../semantic-ui/theme.config";
+
+.atol-section {
+  margin: @mediumSpacer;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 90px;
+    height: 90px;
+    margin-right: 40px;
+  }
+}
+
+.content-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content-section p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.complete-profile-group {
+  padding-bottom: 20px;
+  margin-top: 0 !important;
+  @media (max-width: 767px) {
+    margin-top: 0px !important;
+  }
+  .ui.card {
+    .content {
+      @media (max-width: 767px) {
+        margin-top: 0px !important;
+      }
+      span {
+        @media (max-width: 767px) {
+        }
+      }
+    }
+  }
+}
+.create-trip-content {
+  .complete-profile-group {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  h2.ui.header {
+    font-size: 2rem;
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.trip-type-each {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 1px 1px 18px 1px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.trip-type-each h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.trip-type-each a.btn-common {
+  padding: 10px 35px;
+  font-size: 16px;
+  border-radius: 6px;
+  background: #fff;
+  color: #f01d52;
+  border: 2px solid #f01d52;
+}
+
+.c-trip-btn {
+  padding: 12px 55px;
+  font-size: 18px;
+}
+
+.call-us {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  display: inherit;
+  color: #2196f3;
+}
+
+.head-common h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  .trip-type-each {
+    display: block;
+  }
+
+  .trip-type-each a.btn-common {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-trip-box {
+    top: 10%;
+  }
+
+  .banner-section .banner-main {
+    height: 38vh;
+    max-height: 100%;
+  }
+}
+
+.create-trip-content {
+  background: @brbBlue;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.create-btn {
+  text-align: center;
+}
+
+.trip-includes {
+  width: 100%;
+  color: #fff !important;
+  text-align: center;
+  margin: 30px 0 30px 0;
+
+  .brb-button {
+    margin: 20px 0;
+    width: 300px;
+
+    small {
+      display: block;
+    }
+  }
+  .createtrip-button {
+    .deletetrip-button {
+      display: block;
+      cursor: pointer;
+      color: @brbPink;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .ui.divider:not(.vertical):not(.horizontal) {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  }
+}
+
+.trip-includes h2.header {
+  font-weight: 800;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 18px !important;
+  }
+}
+
+.trip-includes h3 {
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.trip-includes-info {
+  padding: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  div {
+    list-style: none;
+    color: #fff;
+    margin: 0 70px;
+    padding-bottom: 10px;
+    @media (max-width: 767px) {
+      margin: 0;
+      width: 50%;
+    }
+    @media (max-width: 360px) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  a {
+    width: 120px;
+    margin: auto;
+    border: 2px solid #000;
+    padding: 10px;
+    display: inline-block;
+    color: #010101;
+  }
+
+  p {
+    display: inline-block;
+  }
+}
+
+.chkbox_img {
+  display: inline !important;
+  height: 2em;
+  width: 1.2em;
+  margin-right: 15px;
+}
+
+.terms-check-box {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  .ui.checkbox label {
+    font-size: 18px;
+    color: #fff !important;
+    margin: 3rem 0 2rem;
+    padding-left: 25px;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+
+    strong {
+      color: @brbPink;
+    }
+
+    &:before,
+    &:after {
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover::before {
+      box-shadow: @neonBrbPink;
+    }
+
+    @media (min-width: @mediumPoint) {
+      padding-left: 35px;
+
+      &:before,
+      &:after {
+        left: 0;
+        top: -2px;
+      }
+    }
+  }
+
+  .ui.checkbox label:before {
+    background: @brbBlue !important;
+    border-radius: 0%;
+  }
+
+  .ui.checkbox input[type="checkbox"] {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .trip-includes {
+    .terms-check-box {
+      display: block;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      position: relative;
+      .ui.checkbox {
+        padding: 10px 0;
+      }
+
+      label {
+        font-size: 12px;
+        display: block;
+      }
+    }
+    .createtrip-button {
+      padding-top: 15px;
+    }
+  }
+}

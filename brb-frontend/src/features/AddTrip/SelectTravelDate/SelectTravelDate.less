@@ -1,0 +1,44 @@
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+& {
+  .brb-date-range {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    .field {
+      margin: 0 !important;
+    }
+    .endDate {
+      padding-left: 2rem;
+    }
+  }
+  .nine.wide.field {
+    width: 60%;
+  }
+  .select-date {
+    .content {
+      .ui.form {
+        p ~ p {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .dateRange-save-button {
+    text-align: center;
+    padding-top: 20px;
+    & .brb-button {
+      width: 300px;
+    }
+  }
+  .popup-notify {
+    @media (max-width: 767px) {
+      margin-top: 13px;
+    }
+  }
+}

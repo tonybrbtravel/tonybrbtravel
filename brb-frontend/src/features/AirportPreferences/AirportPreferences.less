@@ -1,0 +1,85 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+  .text-banner {
+    & h5.ui.header {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #000000;
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .colorName {
+        color: @brbPink;
+      }
+    }
+
+    .paragraphStyling {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  .available-destinations {
+    background: @brbWhite;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    margin: 0 auto 1rem;
+    display: inline-block;
+    text-align: center;
+
+    p {
+      font-size: 1rem;
+      font-weight: @bold;
+      margin: 0;
+    }
+
+    .available-destinations-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5rem 0;
+
+      span {
+        font-size: 1.5rem;
+        width: 2em;
+        height: 2em;
+        background: @brbPink;
+        color: @brbOffwhite;
+        justify-content: center;
+        line-height: 1;
+        margin: 0 0.25em;
+        border-radius: 4px;
+        align-items: center;
+        display: inline-flex;
+
+        @media (min-width: @largePoint) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .create-trip-airport {
+    max-height: 500px;
+  }
+}

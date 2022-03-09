@@ -1,0 +1,66 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+  .Subscriber-Page {
+    .BRB-swiper {
+      color: @brbPink !important;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      .ui.button.brb-button {
+        background: @brbOffwhite !important;
+        border: 1px solid @brbPink;
+        color: @brbPink;
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 20%;
+      left: 85px !important;
+      color: @brbPink !important;
+      margin-bottom: @smallSpacer;
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+      color: #000 !important;
+    }
+
+    .swiper-button-next {
+      left: 185px !important;
+    }
+  }
+}

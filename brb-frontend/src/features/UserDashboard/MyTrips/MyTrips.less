@@ -1,0 +1,316 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+
+@media screen and (max-width: 600px) {
+  .ui.grid.container {
+    width: 1441px !important;
+    height: 949px;
+    background-color: @brbBlue;
+    position: relative;
+    display:block;
+    border:0.5px solid red;
+  }
+
+  .my-trips-container .title {
+      margin-top: 42px !important;
+      margin-left: 25px;
+  }
+
+  .my-trips-container .title .icon, .title-text{
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+    vertical-align: unset;
+  }
+
+  .my-trips-container .title i{
+    color: white;
+  }
+
+  .my-trips-container .title .pink-text{
+    color: @brbPink;
+  }
+
+  .my-trips-container .mobile-caption{
+    width: 320px;
+    height: 106.31px;
+    // border:1px solid red;
+    font-size: 16px;
+    color: white;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .my-trips-container .trip-filters {
+    margin-top: 35px;
+    margin-left: 120px;
+    display: none;
+  }
+
+  .my-trips-container .trip-filters-dropdown{
+    margin-top: 20px;
+    margin-left: 18px;
+    width: 220px;
+    height: 41px;
+  }
+
+  .my-trips-container .trip-filters .filter-buttons {
+    height: 46px;
+    font-size: 24px;
+    margin-right: 20px;
+    color: @brbPink !important;
+    background-color: #FFFFFF !important;
+    padding: 8px 28px;
+  }
+
+  .trip-filters .filter-buttons .selected {
+    background-color: rgba(233, 69, 96, 0.3) !important;
+  }
+
+  .my-trips-container .trip-card-grid {
+    position: relative;
+    margin-top: 40px;
+    height: 672px;
+    margin-left: 15px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+
+  .trip-card-grid .trip-card {
+    display: inline-block;
+    width: 320px;
+    margin-right: 30px;
+    height: 622px;
+    margin-top: 0px !important;
+    vertical-align: top;
+  }
+
+  .trip-card .timer-block {
+    width: 320px;
+    height: 300px;
+  }
+
+  .trip-card .timer-block h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .timer-block .sub-title {
+    color: white;
+    font-size: 24px;
+  }
+
+  .timer-block .timer {
+    height: 221px;
+    // width:188px;
+    // height: 113px;
+    // margin: auto;
+    padding: 53px 89px;
+    // margin-top: 54px;
+    // margin-bottom: 53px;
+  }
+
+  .trip-card-grid .trip-card .to-and-fro{
+    color: white;
+    width: 320px;
+    height: 58px;
+    background-color: @brbPink;
+    padding: 6px 15px;
+
+  }
+
+  .trip-card .to-and-fro .date-label {
+    margin-right: 10px;
+    width:102px;
+    height:46px;
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  .to-and-fro .date-label p {
+    line-height: 22.77px;
+  }
+
+  .trip-card-grid .trip-info {
+    padding: 0px;
+    background-color: #fff;
+    color: #000;
+    height: 372px;
+    width: 320px;
+  }
+
+  .to-and-fro .date-label {
+    display: inline-block;
+  }
+
+  .trip-info .details h2 {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .trip-info .details ul {
+    margin-top: 15px;
+  }
+
+  .trip-info .details ul li {
+    margin-bottom: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+    height:23px;
+    display: block;
+    font-weight: normal;
+  }
+}
+
+// For Desktop
+@media screen and (min-width: 600px) {
+  .ui.grid.container {
+    width: 1441px !important;
+    height: 949px;
+    background-color: @brbBlue;
+    position: relative;
+    display:block;
+    border:0.5px solid red;
+  }
+
+  .my-trips-container .title {
+      margin-top: 59px !important;
+      margin-left: 120px;
+  }
+
+  .my-trips-container .title .icon, .title-text{
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+    vertical-align: unset;
+  }
+
+  .my-trips-container .title i{
+    color: white;
+  }
+
+  .my-trips-container .title .pink-text{
+    color: @brbPink;
+  }
+
+  .my-trips-container .mobile-caption{
+    display: none;
+  }
+
+  .my-trips-container .trip-filters {
+    margin-top: 35px;
+    margin-left: 120px;
+  }
+
+  .my-trips-container .trip-filters-dropdown{
+    display: none;
+  }
+
+  .my-trips-container .trip-filters .filter-buttons {
+    height: 46px;
+    font-size: 24px;
+    margin-right: 20px;
+    color: @brbPink !important;
+    background-color: #FFFFFF !important;
+    padding: 8px 28px;
+  }
+
+  .trip-filters .filter-buttons .selected {
+    background-color: rgba(233, 69, 96, 0.3) !important;
+  }
+
+  .my-trips-container .trip-card-grid {
+    position: relative;
+    margin-top: 55px;
+    height: 672px;
+    margin-left: 141px;
+  }
+
+  .trip-card-grid .trip-card {
+    display: inline-block;
+    width: 366px;
+    margin-right: 30px;
+    height: 672px;
+    margin-top: 0px !important;
+    vertical-align: top;
+  }
+
+  .trip-card .timer-block {
+    width: 366px;
+    height: 300px;
+  }
+
+  .trip-card .timer-block h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .timer-block .sub-title {
+    color: white;
+    font-size: 24px;
+  }
+
+  .timer-block .timer {
+    height: 221px;
+    // width:188px;
+    // height: 113px;
+    // margin: auto;
+    padding: 53px 89px;
+    // margin-top: 54px;
+    // margin-bottom: 53px;
+  }
+
+  .trip-card-grid .trip-card .to-and-fro{
+    color: white;
+    width: 366px;
+    height: 58px;
+    background-color: @brbPink;
+    padding: 6px 15px;
+
+  }
+
+  .trip-card .to-and-fro .date-label {
+    margin-right: 10px;
+    width:102px;
+    height:46px;
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  .to-and-fro .date-label p {
+    line-height: 22.77px;
+  }
+
+  .trip-card-grid .trip-info {
+    padding: 0px;
+    background-color: #fff;
+    color: #000;
+    height: 372px;
+  }
+
+  .to-and-fro .date-label {
+    display: inline-block;
+  }
+
+  .trip-info .details h2 {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .trip-info .details ul {
+    margin-top: 15px;
+  }
+
+  .trip-info .details ul li {
+    margin-bottom: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+    height:23px;
+    display: block;
+    font-weight: normal;
+  }
+}

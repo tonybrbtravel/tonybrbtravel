@@ -1,0 +1,207 @@
+
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+
+@media only screen and (min-width: 600px) {
+    .flexBox {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .your-trip-title {
+      margin-top: 85px !important;
+      display: inline-block;
+
+      .title-icon,
+      .title-text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .next-drop-title {
+      display: inline-block;
+      position: relative;
+      margin-left: 512px;
+    }
+  }
+  .mytrip-card {
+    .my-trip-wrapper {
+      background: transparent !important;
+      padding: 0px !important;
+      @media (max-width: 767px) {
+        padding: 40px 0;
+      }
+      .this-weeks-drop {
+        background: transparent !important;
+        h4 {
+          color: @brbBlue;
+        }
+      }
+      ul.ui.list li {
+        padding-left: 29px !important;
+        font-size: 18px;
+        padding-top: 10px;
+        color: black;
+      }
+      .mytrip-card {
+        svg {
+          position: absolute;
+          top: 29px;
+          right: 0;
+          z-index: 9;
+        }
+      }
+      .ui.orange.ribbon.label {
+        position: absolute;
+        width: 100px;
+        top: 38px;
+        z-index: 99;
+        left: 101%;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        text-align: right;
+        &::after {
+          display: none;
+        }
+      }
+      .my-trip-container {
+        .editTrip {
+          .brb-button,
+          .editTrip-button {
+            width: 69%;
+          }
+          .editTrip-button {
+            background-color: #fff !important;
+            color: @brbPink;
+            border: 1px solid #f2614f;
+          }
+        }
+        .ui.massive.circular.secondary.button.brb-button.Locked {
+          background-color: #fff !important;
+          color: @brbPink;
+          width: 200px;
+          border: 1px solid #f2614f;
+        }
+        .brb-swiper {
+          padding: 0;
+        }
+        .ui.segment.active.tab {
+          background: none;
+        }
+
+        .ui.header {
+          color: #fff;
+        }
+        .ui.secondary.menu {
+          @media (max-width: 767px) {
+            display: none;
+          }
+          a.item {
+            color: @brbPink;
+            border: 1px solid #f2614f;
+            background: #fff;
+            font-size: 24px;
+            line-height: 30px;
+            &.active {
+              background: #f8c7cf;
+              color: @brbPink;
+            }
+          }
+        }
+        .swiper-slide {
+          @media (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
+      }
+      .mytrips-dropdown-mobile {
+        .ui.dropdown {
+          color: @brbPink;
+          border: 1px solid #f2614f;
+          background: #fff;
+          font-size: 20px;
+          line-height: 30px;
+          border-radius: 4px;
+          padding: 10px;
+          min-width: 220px;
+          .dropdown.icon {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+          }
+        }
+      }
+      ul.ui.list li:before,
+      .ui.bulleted.list .list > .item:before,
+      .ui.bulleted.list > .item:before {
+        content: "\f00c";
+        font-family: Icons;
+        left: 20px;
+        font-size: 18px;
+      }
+      .main-img img {
+        height: 300px !important;
+      }
+      div.content.flight-details {
+        display: flex;
+        flex-direction: column;
+        gap: @tinySpacer;
+      }
+      div.content.my-trip-Content {
+        background: @brbPink;
+        padding: 0.6rem 1rem;
+        .image-container {
+          text-align: center;
+        }
+
+        .my-trip-header-week {
+          :not(.ui.image) {
+            width: 60%;
+          }
+          display: flex;
+          font-size: 18px;
+          justify-content: space-around;
+          color: #fff;
+          .ui.image {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .brb-trip-box {
+    top: 50px;
+    position: absolute;
+    width: 345px;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    .brb-swiper-thumb-container {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      line-height: 31px;
+      .swiper-button-prev,
+      .swiper-button-next {
+        &::after {
+          color: white;
+          font-size: 12px;
+        }
+      }
+      .brb-swiper-thumb {
+        width: 188px;
+        background: #100d0e;
+        color: white;
+        font-size: 12px;
+      }
+    }
+  }

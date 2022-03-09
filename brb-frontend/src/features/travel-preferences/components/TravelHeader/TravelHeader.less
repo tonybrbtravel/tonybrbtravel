@@ -1,0 +1,179 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+& {
+  .travel-banner {
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      padding-top: 64px;
+
+      .img-logo {
+        position: fixed !important;
+        background: #fff;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        // box-shadow: 0px 30px 35px rgba(0, 0, 0, 0.1) !important;
+        width: 100%;
+      }
+    }
+
+    & .ui.image {
+      width: 85px;
+      height: auto;
+      margin-top: 15px;
+
+      @media (max-width: 767px) {
+        margin-left: 0;
+        width: 64px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.main-page {
+  background: #fff9f8;
+
+  @media (max-width: @mediumPoint) {
+    background: transparent;
+  }
+}
+
+.sticky-button {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  z-index: 999;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  background-color: @brbOffwhiteTranslucent;
+  backdrop-filter: blur(5px);
+  box-shadow: @shadowBlockUp;
+
+  .TripTypes-banner,
+  .airport-preferences {
+    .grid:first-child {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.TripTypes-banner {
+  padding-bottom: 100px;
+  @media (max-width: 767px) {
+    padding-bottom: 75px;
+  }
+}
+
+.airport-preferences {
+  padding-bottom: 35px;
+  @media (max-width: 767px) {
+    padding-bottom: 75px;
+  }
+}
+
+.modal {
+  .TripTypes-banner,
+  .airport-preferences {
+    padding-bottom: 0;
+    @media (max-width: 767px) {
+      padding-bottom: 0;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+  .create-trip-airport {
+    @media (max-width: 767px) {
+      .row .column {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .destinations .ui.container .ui.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    .column {
+      padding: 0.5em;
+    }
+  }
+  .airport-preferences {
+    .modal-airportPreferenceCards {
+      min-width: 100%;
+      .min-w-100 {
+        min-width: 100%;
+      }
+    }
+    .available-destinations {
+      text-align: center;
+      position: relative;
+      margin-top: 0;
+      .available-destinations-wrapper {
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+.airport-preferences,
+.TripTypes-banner {
+  .ui.relaxed.list:not(.horizontal) > .item:not(:last-child) {
+    padding-bottom: 10px;
+    @media (max-width: 767px) {
+      padding-bottom: 5px;
+    }
+  }
+  .ui.list .list > .item .header,
+  .ui.list > .item .header {
+    font-size: 1em;
+  }
+}
+
+.footer-btn .button {
+  min-width: 272px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .footer-btn {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: #fff;
+    z-index: 999;
+    text-align: left !important;
+    width: 100%;
+
+    .brb-button {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+  .excludedDestinations {
+    .ui.container {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .footer-btn {
+      .brb-button {
+        p {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}

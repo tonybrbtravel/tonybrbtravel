@@ -1,0 +1,368 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+
+@import (multiple) "../../semantic-ui/theme.config";
+
+@media only screen and (min-width: 600px) {
+  .flexBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .your-trip-title {
+    margin-top: 85px !important;
+    display: inline-block;
+
+    .title-icon,
+    .title-text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .next-drop-title {
+    display: inline-block;
+    position: relative;
+    margin-left: 512px;
+  }
+}
+.my-trip-wrapper {
+  background: @brbBlue;
+  padding: 30px 90px 50px 90px;
+  @media (max-width: 767px) {
+    padding: 40px 0;
+  }
+  ul.ui.list li {
+    padding-left: 29px !important;
+    font-size: 16px;
+    padding-top: 10px;
+    color: black;
+  }
+  .mytrip-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    svg {
+      position: absolute;
+      top: 29px;
+      right: 0;
+      z-index: 9;
+    }
+    h4 {
+      margin-top: 0;
+    }
+  }
+  .ui.orange.ribbon.label {
+    position: absolute;
+    width: 100px;
+    top: 38px;
+    z-index: 99;
+    left: 101%;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    text-align: right;
+    &::after {
+      display: none;
+    }
+  }
+  .my-trip-container {
+    .editTrip,
+    .mytrip-card {
+      .brb-button,
+      .editTrip-button {
+        width: 69%;
+      }
+      .editTrip-button {
+        background-color: #fff !important;
+        color: @brbPink;
+        border: 1px solid #f2614f;
+      }
+      .selected-wrapper {
+        position: absolute;
+        top: 18%;
+        font-size: 1.5em;
+        left: 39%;
+        z-index: 2;
+      }
+      .week-drop-box {
+        top: 28%;
+        position: absolute;
+        width: 345px;
+        z-index: 2;
+        .ui.header {
+          display: block;
+          padding: 8px;
+          .sub.header {
+            color: #fff;
+          }
+        }
+      }
+
+      .upcoming-drop-box {
+        top: 73%;
+        position: absolute;
+        width: 345px;
+        z-index: 2;
+        .ui.header {
+          display: block;
+          padding: 8px;
+          font-size: 24px;
+          .sub.header {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .ui.massive.circular.secondary.button.brb-button.Locked {
+      background-color: #fff !important;
+      color: @brbPink;
+      width: 200px;
+      border: 1px solid #f2614f;
+    }
+
+    .brb-swiper {
+      padding-bottom: 30px;
+      .swiper-pagination {
+        bottom: 0px;
+        & .swiper-pagination-bullet {
+          background: rgba(255, 255, 255, 0.5);
+          opacity: 1;
+        }
+        & .swiper-pagination-bullet-active {
+          background: @brbPink;
+          border: 1px solid @brbPink;
+        }
+      }
+    }
+    .ui.segment.active.tab {
+      background: none;
+      padding: 0;
+    }
+
+    .ui.header {
+      color: #fff;
+    }
+    .ui.secondary.menu {
+      a.item {
+        color: @brbPink;
+        border: 1px solid #f2614f;
+        background: #fff;
+        font-size: 16px;
+        line-height: 16px;
+        &.active {
+          background: #f8c7cf;
+          color: @brbPink;
+        }
+      }
+    }
+    .swiper-slide {
+      .ui.card {
+        .content {
+          border-top: none !important;
+          .ui.list {
+            margin-top: 5px !important;
+          }
+        }
+      }
+    }
+  }
+  .mytrips-dropdown-mobile {
+    .ui.dropdown {
+      color: @brbPink;
+      border: 1px solid #f2614f;
+      background: #fff;
+      font-size: 16px;
+      line-height: 30px;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      .menu {
+        width: 100%;
+      }
+      .text {
+        font-weight: normal;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        right: 15px;
+        top: 21px;
+        background: url("../../images/icons/dropdown-arrow.png") no-repeat
+          center center;
+        background-size: contain;
+        width: 14px;
+        height: 7px;
+        margin-left: 0.5em;
+      }
+      .dropdown.icon {
+        display: none;
+      }
+      .visible.menu.transition {
+        .active.selected.item {
+          background: @brbPink;
+          color: #fff;
+        }
+      }
+    }
+  }
+  ul.ui.list li:before,
+  .ui.bulleted.list .list > .item:before,
+  .ui.bulleted.list > .item:before {
+    content: "\f00c";
+    font-family: Icons;
+    left: 20px;
+    font-size: 18px;
+  }
+  .main-img {
+    position: relative;
+    img {
+      height: 250px !important;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+  }
+
+  .trip-details {
+    font-size: 20px;
+    color: black;
+    padding-left: 20px;
+  }
+  div.content.my-trip-Content {
+    background: @brbPink;
+    padding: 0.6rem 1rem;
+    .image-container {
+      text-align: center;
+    }
+
+    .my-trip-header-week {
+      :not(.ui.image) {
+        width: 33%;
+        text-align: center;
+      }
+      display: flex;
+      font-size: 16px;
+      justify-content: space-around;
+      color: #fff;
+      .ui.image {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.upcoming-trips-box {
+  top: 20px !important;
+}
+
+.brb-trip-box {
+  top: 50px;
+  position: absolute;
+  width: 345px;
+  .brb-swiper-thumb-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 31px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      &::after {
+        color: white;
+        font-size: 12px;
+      }
+    }
+    .brb-swiper-thumb {
+      width: 188px;
+      background: #100d0e;
+      color: white;
+      font-size: 12px;
+    }
+  }
+}
+
+.your-trip-title {
+  margin: 20px 0px !important;
+  display: inline-block;
+}
+
+& {
+  .this-weeks-drop {
+    background-color: @brbBlue;
+    color: #fff;
+    .ui {
+      &.image {
+        svg {
+          display: inline-block;
+          width: 30px;
+          position: relative;
+          top: -5px;
+          @media (max-width: 767px) {
+            width: 30px;
+            height: auto;
+            top: -2px;
+          }
+        }
+      }
+      &.header {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        @media (max-width: 370px) {
+          line-height: 24px;
+          font-size: 20px;
+        }
+        .content {
+          margin-left: 15px;
+          font-size: 2rem;
+          @media (max-width: 767px) {
+            font-size: 24px;
+          }
+        }
+        .brb-pink-text.small {
+          font-size: 12px;
+          font-weight: lighter;
+          text-decoration: underline;
+          display: inline-block;
+        }
+      }
+      @media (max-width: 767px) {
+        .this-week-drop {
+          margin-top: 0px;
+          .my-trip-rewards {
+            padding-top: 3rem;
+          }
+          .brb-swiper {
+            padding: 0rem 3rem 1.5rem 2.5rem;
+          }
+        }
+      }
+    }
+
+    .week-drop {
+      h2 {
+        position: relative;
+        @media (max-width: 767px) {
+          margin-top: 16px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+      svg {
+        margin-left: 0.15em;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+& {
+  .not-a-member {
+    justify-content: center;
+    color: #979797;
+    font-size: @smallSize;
+    margin-top: 19px;
+    display: flex;
+    & a {
+      color: #979797;
+      padding-left: 2px;
+      text-decoration: underline;
+    }
+  }
+  .forgot-link {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: @smallPoint) {
+  .not-a-member {
+    & a {
+      color:@brbPink;
+      text-decoration: none;
+    }
+  }
+}

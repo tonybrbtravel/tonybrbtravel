@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Circular";
+  font-display: swap;
+  src: url("./assets/fonts/CircularStd-Book.eot");
+  src: url("./assets/fonts/CircularStd-Book.woff") format("woff"),
+    url("./assets/fonts/CircularStd-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  font-display: swap;
+  src: url("./assets/fonts/CircularStd-Black.eot");
+  src: url("./assets/fonts/CircularStd-Black.woff") format("woff"),
+    url("./assets/fonts/CircularStd-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Circular, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background: #1a1a2e; /* @brbBlue: */
+  background: #ffffff;
+}
+
+::selection {
+  background-color: #ffeb34;
+  color: black;
+  opacity: 1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Simple animations */
+
+@keyframes simple-animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.simple-animate-in {
+  animation-name: simple-animate-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+}
+
+.simple-animate-in-triggered {
+  animation-play-state: running;
+}
+
+
+/* Utility classes */
+.d-none {
+  display: none !important;
+}
+
+
+/* Overrides */
+.swiper-slide {
+  height: auto;
+  box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../../semantic-ui/theme.config";
+
+.timer-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: @brbOffwhite;
+  font-size: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}

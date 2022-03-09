@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/invite-friend</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/invite-friend" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(39.000000, 37.000000)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(6.000000, 6.000000)" fill="#FFB6CE">
+                <circle id="Oval" cx="32" cy="14" r="14"></circle>
+                <path d="M63.6006729,58.7908508 C63.6006729,41.7701863 49.5870349,27.9722115 32.3003365,27.9722115 C15.013638,27.9722115 1,41.7701863 1,58.7908508 C1,75.8115153 63.6006729,75.8115153 63.6006729,58.7908508 Z" id="Oval-Copy-15"></path>
+            </g>
+            <g id="Group-4" stroke="#000000" stroke-width="6">
+                <circle id="Oval" cx="32" cy="14" r="14"></circle>
+                <path d="M63.6006729,58.7908508 C63.6006729,41.7701863 49.5870349,27.9722115 32.3003365,27.9722115 C15.013638,27.9722115 1,41.7701863 1,58.7908508 C1,75.8115153 63.6006729,75.8115153 63.6006729,58.7908508 Z" id="Oval-Copy-15"></path>
+            </g>
+            <path d="M17,54.3359375 L17,65.9257812" id="Path-3" stroke="#000000" stroke-width="6" stroke-linecap="round"></path>
+            <path d="M49,54.3359375 L49,65.9257812" id="Path-3-Copy" stroke="#000000" stroke-width="6" stroke-linecap="round"></path>
+            <path d="M65,2 L65,17.9257812" id="Path-3-Copy-2" stroke="#000000" stroke-width="6" stroke-linecap="round" transform="translate(65.000000, 9.962891) rotate(-270.000000) translate(-65.000000, -9.962891) "></path>
+            <path d="M65,2 L65,17.9257812" id="Path-3-Copy-2" stroke="#000000" stroke-width="6" stroke-linecap="round" transform="translate(65.000000, 9.962891) rotate(-180.000000) translate(-65.000000, -9.962891) "></path>
+        </g>
+    </g>
+</svg>

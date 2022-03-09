@@ -1,0 +1,71 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+& {
+  .verify-code {
+    & .brb-button {
+      margin-top: 20px;
+    }
+
+    & .sub-text {
+      color: black;
+      font-size: @medium;
+    }
+
+    & .styles_react-code-input-container__tpiKG {
+      width: 100% !important;
+
+      & .styles_react-code-input__CRulA {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 767px) {
+          margin-bottom: 33px;
+        }
+
+        & input {
+          width: 38px !important;
+          height: 53px !important;
+          margin: 0 3px;
+          border: 0px solid @brbPink;
+          background: @lightSlateGrey;
+          border-radius: 4px !important;
+          flex-grow: 1;
+
+          &:nth-child(3) {
+            margin-right: 8% !important;
+          }
+
+          &:focus {
+            border: 1px solid @brbPink;
+          }
+        }
+      }
+    }
+
+    .resend {
+      justify-content: center;
+      color: black;
+      font-size: @medium;
+      font-weight: @bold;
+      margin-top: 19px;
+      display: block;
+
+      & a {
+        color: @brbPink;
+        font-size: @medium;
+        //font-family: Circular Std;
+        font-weight: @bold;
+        padding: 0 4px !important;
+      }
+    }
+  }
+}

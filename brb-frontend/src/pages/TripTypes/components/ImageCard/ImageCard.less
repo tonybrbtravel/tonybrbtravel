@@ -1,0 +1,115 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+.image-card {
+  .ui.card {
+    box-shadow: none !important;
+    background: none !important;
+
+    .content {
+      padding: 0 !important;
+      //font-family: Circular Std;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+
+      .description {
+        //font-family: Circular Std;
+        font-style: normal;
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 20px;
+        color: #000000 !important;
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+
+    .segment {
+      position: absolute !important;
+      top: 190px;
+      left: 10px;
+      z-index: 101;
+      @media (max-width: 767px) {
+        top: 125px;
+        padding: 5px !important;
+      }
+    }
+
+    .image-height {
+      height: 180px;
+      border-radius: 8px !important;
+      transition: box-shadow 100ms ease-in-out;
+
+      @media (min-width: @mediumPoint) {
+        height: 250px !important;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &:before {
+        content: "";
+        background-image: radial-gradient(rgba(@brbPink, .25), rgba(@brbPink, .75));
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        transition: all 300ms ease-in-out;
+        opacity: 0;
+      }
+
+      &.selected-option:before {
+        opacity: 1;
+      }
+
+      &.selected-option:after {
+        content: "";
+        position: absolute;
+        height: calc(100% + 10px);
+        width: calc(100% + 10px);
+        top: -5px;
+        left: -5px;
+        border: 2px solid @brbPink;
+        border-radius: 8px;
+      }
+    }
+
+    &:hover .image-height {
+      box-shadow: @neonBrbPink;
+    }
+
+    .ui.checkbox label {
+      //font-family: Circular Std;
+      font-style: normal;
+      font-size: 1em;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      color: @brbPink;
+      @media (max-width: 767px) {
+        line-height: 20px;
+      }
+    }
+  }
+
+  .continue {
+    float: right;
+    width: 278px;
+    height: 54px;
+    margin-top: 66px !important;
+  }
+}

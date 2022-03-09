@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="11px" viewBox="0 0 8 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>lilman</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Trips" transform="translate(-34.000000, -569.000000)" fill="#000000">
+            <g id="Group-2-Copy" transform="translate(34.000000, 565.000000)">
+                <g id="lilman" transform="translate(0.000000, 4.000000)">
+                    <circle id="Oval" cx="4" cy="3" r="3"></circle>
+                    <path d="M8,9 C8,6.790861 6.209139,5 4,5 C1.790861,5 0,6.790861 0,9 C0,11.209139 8,11.209139 8,9 Z" id="Oval-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,137 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.dashboard-container {
+  .welcome-banner {
+    h2.header {
+      margin-top: 0;
+    }
+  }
+
+  .my-brb-rewards {
+    background: @brbBlue;
+
+    h2.ui.image.header, .reward-info {
+      color: @brbOffwhite !important;
+    }
+
+    .ui.card .image-height::after {
+      border: 3px solid @brbOffwhite;
+    }
+
+    h2.ui.image.header {
+      > .icon {
+        font-size: 1em;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+
+  .welcome-banner .card .content .subtext p {
+    font-size: 16px;
+    width: 85%;
+    padding-right: 50px;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      width: 100%;
+      padding: 0px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .subscribe-image {
+      display: none;
+    }
+  }
+
+  .subscription-calculator .title h2 {
+    font-size: 48px;
+    line-height: 69px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  // .welcome-block {
+  //   width: 310px;
+  //   height: 364px;
+  // }
+
+  // .welcome-card .title {
+  //   margin-top: 25px;
+  // }
+
+  // .welcome-card .title h2 {
+  //   width: 310px;
+  // }
+
+  // .welcome-card .caption {
+  //   margin-top: 20px;
+  // }
+
+  // .welcome-card .caption p{
+  //   font-size: 14px;
+  // }
+
+  // .welcome-card .points {
+  //   margin-top: 20px;
+  // }
+
+  // .welcome-card .cta-btn {
+  //   margin-top: 44px;
+  // }
+  // .welcome-block {
+  //   width: 832px;
+  //   height: 438px;
+  //   margin: auto;
+  //   position: relative;
+  //   top: 86.68px;
+  //   background: white;
+  //   border-radius: 6px;
+  //   border: 1px solid rgb(158, 156, 156);
+  //   color: black;
+  //   line-height: 32px;
+  // }
+}
+
+// For Desktop
+@media screen and (min-width: 600px) {
+  // .welcome-section {
+  //   &.ui.container, .ui.grid.container {
+  //     width: 1441px !important;
+  //     height: 760px;
+  //   }
+  // }
+
+  // .welcome-card {
+  //   width: 832px;
+  //   height: 438px;
+  //   margin: auto;
+  //   color: black;
+  //   border:1px solid red;
+  //   margin-top: 181px;
+  // }
+
+  // .welcome-card .title h2{
+  //   margin-top: 49px;
+  //   height: 61px;
+  // }
+
+  // .welcome-card .points {
+  //   margin-top: 20px;
+  //   line-height: 31px;
+  // }
+
+  // .welcome-card .caption {
+  //   margin-top: 20px;
+  // }
+
+  // .welcome-card .cta-btn {
+  //   margin-top: 20px;
+  // }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="19px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Subscription-Funnel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-5" transform="translate(-347.000000, -997.000000)" fill="#000000">
+            <g id="Group-2" transform="translate(347.000000, 997.000000)">
+                <g id="icon-lock">
+                    <path d="M10.25,13 C10.25,9.01686614 10.25,6.54837069 10.25,5.59451367 C10.25,4.04963138 9.01878306,2.79725684 7.5,2.79725684 C5.98121694,2.79725684 4.75,4.04963138 4.75,5.59451367 C4.75,6.52980626 4.75,8.9983017 4.75,13 L2,13 C2,10.1228522 2,7.65435673 2,5.59451367 C2,2.50474909 4.46243388,0 7.5,0 C10.5375661,0 13,2.50474909 13,5.59451367 C13,7.65435673 13,10.1228522 13,13 L10.25,13 Z" id="Combined-Shape"></path>
+                    <rect id="Rectangle-10" x="0" y="8" width="15" height="11"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

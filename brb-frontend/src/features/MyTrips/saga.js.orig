@@ -1,0 +1,159 @@
+<<<<<<< HEAD
+import { call, put, select, takeLatest, takeEvery } from "redux-saga/effects";
+=======
+import {
+    take,
+    call,
+    all,
+    put,
+    cancel,
+    select,
+    takeLatest,
+    takeEvery,
+    apply
+  } from 'redux-saga/effects';
+
+  import store, {history} from '../../app/store';
+  import {request, unauthorisedRequest, requestNoPayload} from '../../app/request';
+
+  import { push } from 'connected-react-router'
+  import { Auth } from 'aws-amplify';
+
+  import { userTripsUpdate, selectUserTrips, userTripsData, userDeleteTrip, userLockTrip, tripTimer } from './mytripsSlice';
+  import { selectUser } from '../../features/dashboard/dashboardSlice';
+>>>>>>> task/dashboard
+
+import { requestNoPayload } from "../../app/request";
+
+import { Auth } from "aws-amplify";
+
+import {
+  userTripsUpdate,
+  userTripsData,
+  userDeleteTrip,
+  userLockTrip,
+} from "./mytripsSlice";
+import { selectUser } from "../../features/dashboard/dashboardSlice";
+
+export function* getUserTripDetails() {
+  try {
+    const user = yield select(selectUser());
+    const baseURL = process.env.REACT_APP_TRIP_URL;
+    const session = yield Auth.currentSession();
+    const token = session.idToken.jwtToken;
+
+    const response = yield call(
+      requestNoPayload,
+      baseURL,
+      "/trip/",
+      "GET",
+      token
+    );
+    if (response) {
+      //get user trip details
+      yield put(userTripsData(response.data));
+    }
+  } catch (err) {}
+}
+
+<<<<<<< HEAD
+export function* deleteTrip(action) {
+  const user = yield select(selectUser());
+  const baseURL = process.env.REACT_APP_TRIP_URL;
+  const session = yield Auth.currentSession();
+  const token = session.idToken.jwtToken;
+
+  try {
+    const response = yield call(
+      requestNoPayload,
+      baseURL,
+      "/trip/" + action.payload?.id,
+      "DELETE",
+      token
+    );
+    if (response) {
+      const result = yield call(
+        requestNoPayload,
+        baseURL,
+        "/trip/",
+        "GET",
+        token
+      );
+      if (result) {
+        yield put(userTripsData(result.data));
+      }
+    }
+  } catch (error) {}
+}
+
+export function* lockTrip(action) {
+  const user = yield select(selectUser());
+  const baseURL = process.env.REACT_APP_TRIP_URL;
+  const session = yield Auth.currentSession();
+  const token = session.idToken.jwtToken;
+=======
+  export function* lockTrip(action) {
+    const user = yield select(selectUser());
+    const baseURL = process.env.REACT_APP_TRIP_URL
+    const session = yield Auth.currentSession();
+    const token = session.idToken.jwtToken;
+    try {
+        const response = yield call(requestNoPayload, baseURL, '/trip/lock-trip/' + action.payload?.id, 'GET', token);
+>>>>>>> task/dashboard
+
+  try {
+    const response = yield call(
+      requestNoPayload,
+      baseURL,
+      "/trip/lock-trip/" + action.payload?.id,
+      "GET",
+      token
+    );
+
+    if (response) {
+      const result = yield call(
+        requestNoPayload,
+        baseURL,
+        "/trip/",
+        "GET",
+        token
+      );
+      if (result) {
+        yield put(userTripsData(result.data));
+      }
+<<<<<<< HEAD
+    }
+  } catch (error) {}
+}
+
+export function* getUserTripDetailsWatcher() {
+  yield takeLatest(userTripsUpdate().type, getUserTripDetails);
+  yield takeEvery(userDeleteTrip().type, deleteTrip);
+  yield takeLatest(userLockTrip().type, lockTrip);
+}
+=======
+  }
+
+
+  export function* setTripTimer(action) {
+    const user = yield select(selectUser());
+    const baseURL = "https://connect-staging.berightback.travel"
+    const session = yield Auth.currentSession();
+    const token = session.idToken.jwtToken;
+    try {
+        const response = yield call(requestNoPayload, baseURL, '/trip/', 'GET', token);
+        if(response){
+              yield put(userTripsData(response.data));
+        }
+
+      } catch (error) {
+      }
+  }
+
+  export function* getUserTripDetailsWatcher() {
+      yield takeLatest(userTripsUpdate().type, getUserTripDetails);
+      yield takeEvery(userDeleteTrip().type, deleteTrip);
+      yield takeLatest(userLockTrip().type, lockTrip);
+      yield takeLatest(tripTimer().type, setTripTimer);
+  }
+>>>>>>> task/dashboard

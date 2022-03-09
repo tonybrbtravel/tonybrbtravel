@@ -1,0 +1,48 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+& {
+  .sign-up-banner {
+    margin-top: 10px;
+
+    & .ui.image {
+      width: 80px;
+      margin-left: 58px;
+    }
+    & .already-member {
+      & h5.ui.header {
+        color: white;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: @normal;
+        margin-right: 17px;
+      }
+      & .brb-button {
+        margin-right: 51px !important;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .sign-up {
+    padding-bottom: 45px;
+    .ui.card .content .header {
+      font-size: 1.5rem !important;
+    }
+    .swiper-pagination {
+      bottom: 15% !important;
+    }
+    @media (min-width: 1024px) {
+      min-height: 75vh;
+    }
+  }
+}

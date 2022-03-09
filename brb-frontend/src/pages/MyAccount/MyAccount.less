@@ -1,0 +1,1030 @@
+@type: "global";
+@element: "site";
+
+@import (multiple) "../../semantic-ui/theme.config";
+
+.my-account-container {
+  .email-preferences {
+    h2 {
+      font-size: 2rem;
+      @media (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 767px) {
+      .ui.button.brb-button {
+        width: 100%;
+      }
+    }
+  }
+
+  .my-brb-rewards {
+    .swiper-pagination {
+      bottom: 0px !important;
+      .swiper-pagination-bullet {
+        background: rgba(255, 255, 255, 0.2);
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #fff;
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .header-grid {
+      margin-right: 0rem;
+    }
+    .logo {
+      width: 80px;
+    }
+  }
+}
+
+.my-trip-rewards {
+  .swiper-pagination {
+    bottom: 0px !important;
+    .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.2);
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.mySubscription {
+  background-color: #fff;
+  border-radius: 6px;
+  .profile-img {
+    text-align: center;
+    margin-top: 20px;
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+    h2 {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width: 767px) {
+        width: 76px;
+        height: 76px;
+      }
+    }
+  }
+  h2 {
+    strong {
+      color: @brbPink;
+    }
+    @media (max-width: 767px) {
+      .profile-image {
+        width: 76px !important;
+        height: 76px !important;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: auto !important;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .ui.grid {
+      .update-button {
+        padding-top: 0rem;
+      }
+    }
+    .myAccountUserInfo .ui.card {
+      background-color: #fff;
+    }
+  }
+  .text {
+    text-align: center;
+    font-size: 1.2em;
+    strong {
+      color: @brbPink;
+    }
+  }
+}
+
+.my-brb-rewards {
+  h2 {
+    font-size: 2rem !important;
+    color: #fff !important;
+    @media (max-width: 767px) {
+      font-size: 24px !important;
+    }
+
+    svg {
+      display: inline-block !important;
+      position: relative;
+      top: 4px;
+      margin-right: 15px;
+      width: 30px;
+      @media (max-width: 767px) {
+        width: 25px;
+      }
+    }
+    .content {
+      padding-top: 2px;
+    }
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+}
+
+.mySubscription {
+  .brb-button {
+    font-size: 16px;
+    max-width: 284px;
+    width: 100%;
+  }
+}
+
+i.profile-placeholder.icon {
+  font-size: 5em;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+.input-file-preview {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  left: 0px;
+}
+
+.pause-subscribe {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.preview-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card.subscription {
+  color: #333333;
+
+  h2.ui.header {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  div.header {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .content {
+    .meta {
+      font-size: 12px !important;
+      color: #999 !important;
+      line-height: 16px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.myAccountUserInfo .ui.card {
+  background: transparent;
+}
+
+.ui.table tr {
+  td {
+    border: none;
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+}
+.user-info {
+  strong {
+    color: @brbPink;
+  }
+}
+
+.my-travel-savings {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url("/src/assets/images/my-tavel-saving-shadow.svg");
+  background-position: 71.5% 120px, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 536px, 50px;
+  .ui.image.header {
+    font-size: 2rem;
+
+    @media (max-width: 367px) {
+      line-height: 20px;
+    }
+  }
+  @media (max-width: 1300px) {
+    background-size: 540px, 50px;
+  }
+  @media (max-width: 1200px) {
+    background-size: 500px, 50px;
+  }
+
+  @media (max-width: 767px) {
+    background-size: 445px, 25px !important;
+    background-position: -82px 444px !important;
+    padding-bottom: 100px;
+    .ui.grid > .row > .column {
+      position: initial;
+    }
+    .subscribe-points {
+      position: absolute !important;
+      bottom: -85px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+    .ui.image.header {
+      position: relative;
+      padding-left: 25px;
+      @media (max-width: 370x) {
+        line-height: 26px;
+      }
+      .ui.image {
+        position: absolute;
+        width: 28px !important;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+  @media (max-width: 414px) {
+    background-size: 375px, 25px !important;
+    background-position: -61px 407px !important;
+  }
+
+  .travel-saving-block {
+    background: @white !important;
+    border-radius: 5px;
+    padding: 0 60px 55px !important;
+    @media (max-width: 767px) {
+      padding: 25px 25px 0px 25px !important;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .expense-progress-bar {
+    div.label {
+      position: absolute;
+      top: 2px;
+      right: inherit;
+      margin-left: 30px;
+      span {
+        width: 30px;
+        right: -5px;
+      }
+    }
+    .ui.small.progress {
+      background-color: transparent;
+
+      &.red {
+        .bar {
+          background-color: @brbPink;
+
+          &:after {
+            content: "";
+            border-top: dashed 1px #fff9f8;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+          }
+        }
+      }
+
+      .bar {
+        border-radius: 50px;
+        height: 2.15rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile.reversed.row {
+    flex-direction: column-reverse !important;
+  }
+
+  .mySubscription {
+    margin: 25px -1rem 66px -1rem;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    .row {
+      margin-bottom: 0;
+    }
+    .meta {
+      margin-bottom: 0 !important;
+    }
+    .ui.table {
+      border: none;
+      tr {
+        box-shadow: none !important;
+        td,
+        th {
+          width: 50% !important;
+          float: left;
+          border: none !important;
+        }
+        td:first-child {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .myAccountDetails {
+    padding-top: 10px !important;
+    padding-bottom: 25px !important;
+    h2 {
+      margin-top: 24px;
+      font-size: 24px;
+      .mydetails-logo {
+        width: 22px;
+        margin-right: 5px;
+      }
+    }
+    .sub.header {
+      color: @brbBlue !important;
+      font-size: 16px !important;
+    }
+
+    .row .column form .field .input .react-tel-input {
+      .form-control {
+        width: 100% !important;
+        padding-left: 45px !important;
+      }
+      .flag-dropdown {
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+  .myAccountDetails .row .column form .field .input input {
+    background: #ececec !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    color: @brbBlue;
+  }
+}
+
+.mySubscriptionID .content {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .my-account-container {
+    .my-travel-savings,
+    .my-brb-rewards {
+      margin: 0px;
+    }
+    .my-account-banner {
+      min-height: calc(100vh - 70px);
+    }
+  }
+
+  .mySubscription {
+    background-color: @white;
+    padding: 30px 0 40px;
+
+    .ui.grid {
+      .row {
+        padding-bottom: 0;
+        &.mobile.reversed {
+          padding-top: 0;
+        }
+        .mySubscriptionTable {
+          margin-top: 0;
+          td {
+            padding: 5px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 0 !important;
+      .content {
+        font-size: 2rem;
+      }
+
+      strong {
+        color: @brbPink;
+      }
+    }
+
+    .mySubscriptionTable {
+      table {
+        background-color: transparent;
+        border: 0;
+        margin-left: 35px;
+        font-size: 20px;
+        margin-top: 55px;
+      }
+    }
+
+    .mySubscriptionID {
+      form {
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+
+      .card {
+        min-width: 100%;
+        text-align: center;
+
+        h2 {
+          img {
+            margin: 0;
+            width: 125px;
+          }
+        }
+      }
+    }
+
+    .mySubscriptionButton {
+      text-align: right !important;
+
+      button {
+        width: 50%;
+      }
+    }
+  }
+
+  .account-details {
+    background: @white;
+    .ui.header {
+      h2 {
+        font-size: 2rem;
+        img {
+          width: 30px;
+        }
+      }
+    }
+    .sub.header {
+      font-size: 16px !important;
+      color: @brbBlue !important;
+    }
+  }
+
+  .text-center {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .myAccountDetails {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .ui.header {
+      div.header {
+        margin-top: 30px;
+      }
+    }
+
+    .upload-file-column {
+      .header {
+        color: #333;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .meta {
+        font-size: 12px !important;
+        color: #999 !important;
+        line-height: 16px;
+      }
+
+      .ui.header {
+        .sub.header {
+          font-size: 18px;
+          color: @brbBlue;
+        }
+      }
+    }
+
+    .row {
+      .column {
+        form {
+          font-size: 1rem;
+          margin: auto;
+          width: 938px;
+
+          .field label {
+            font-size: 14px;
+            font-weight: 400;
+            color: @brbBlue;
+            margin-top: 20px;
+          }
+
+          ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: rgba(26, 26, 46, 0.5);
+          }
+
+          .field .input {
+            margin-top: 0;
+            border-radius: 0 !important;
+            border: none !important;
+
+            input {
+              background: #ececec;
+              border-radius: 0;
+              border: none;
+              padding: 20px;
+              font-size: 16px;
+              color: @brbBlue;
+            }
+            .react-tel-input {
+              .flag-dropdown {
+                background-color: transparent;
+                border: none;
+                .selected-flag:hover,
+                .selected-flag:focus,
+                .open {
+                  background-color: transparent;
+                  border: none;
+                }
+              }
+
+              input {
+                padding-left: 45px;
+                width: 100% !important;
+                height: auto;
+              }
+            }
+            input:-webkit-autofill {
+              box-shadow: 0px 0px 0px 100px #ececec inset !important;
+            }
+            .country-code-input {
+              background: #ececec;
+              border: none;
+              box-shadow: none;
+              width: 100px;
+              min-width: auto;
+              line-height: 33px;
+              border-right: 1px solid #dedbdb;
+              border-radius: 0;
+              input {
+                max-width: 100px;
+                min-width: auto;
+              }
+            }
+            .ui.dropdown > .dropdown.icon {
+              top: 50%;
+              margin-top: -22px;
+            }
+          }
+
+          button {
+            width: 284px;
+            height: 54px;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .ui.form .fields {
+      gap: 50px;
+    }
+  }
+
+  .email-preferences {
+    padding: @mediumSpacer 0;
+    background: @brbBlue;
+
+    h2 {
+      .icon {
+        color: blue;
+      }
+
+      .content {
+        color: white;
+
+        strong {
+          color: @brbPink;
+        }
+      }
+
+      .sub {
+        color: white !important;
+        margin-top: @smallSpacer !important;
+      }
+    }
+
+    form {
+      label {
+        color: white !important;
+      }
+
+      .email-preference-check-box,
+      .email-preference-check-box-weekly {
+        margin-top: 12px;
+        font-size: 1em;
+
+        label {
+          margin-left: 41px;
+          padding-left: 35px;
+        }
+
+        .ui.checkbox label:before {
+          background: @brbBlue !important;
+          border-radius: 0%;
+        }
+
+        .ui.checkbox input[type="checkbox"] {
+          left: 43px !important;
+          top: 2px;
+        }
+      }
+
+      .save-preferences-cta-btn {
+        margin-top: @mediumSpacer;
+
+        button {
+          width: 284px;
+          height: 54px;
+        }
+      }
+    }
+  }
+
+  .my-account-footer {
+    background: white;
+
+    div.column {
+      .column {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.email-preferences {
+  .emailpreferences-logo {
+    width: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .upload-file-column {
+    padding-bottom: 30px;
+  }
+  .email-preferences {
+    padding: 35px 0 35px;
+    background: @brbBlue;
+
+    h2 {
+      .icon {
+        color: blue;
+      }
+
+      .emailpreferences-logo {
+        width: 25px;
+        margin-right: 5px;
+      }
+
+      .content {
+        color: white;
+
+        strong {
+          color: @brbPink;
+        }
+      }
+
+      .tag-line {
+        margin-top: 30px;
+      }
+
+      .sub {
+        color: white !important;
+      }
+
+      div.sub.header {
+        margin-top: 30px !important;
+        height: 46px;
+      }
+    }
+
+    form {
+      margin-top: 25px;
+
+      label {
+        color: white !important;
+      }
+
+      .email-preference-check-box,
+      .email-preference-check-box-weekly {
+        margin-top: 12px;
+        font-size: 16px;
+
+        label {
+          margin-left: 10px;
+        }
+
+        .ui.checkbox label:before {
+          background: @brbBlue !important;
+          border-radius: 0%;
+        }
+
+        .ui.checkbox input[type="checkbox"] {
+          left: 15px !important;
+          top: 2px;
+        }
+      }
+
+      .save-preferences-cta-btn {
+        margin: 20px 0px;
+
+        button {
+          width: 284px;
+          height: 54px;
+        }
+      }
+    }
+  }
+}
+
+.my-points {
+  padding: 40px 0;
+
+  h2 {
+    color: #fff;
+    @media (max-width: 767px) {
+      padding-left: 10px;
+    }
+
+    span {
+      color: @brbPink;
+    }
+  }
+
+  .mp-header-val {
+    width: 100%;
+    color: #fff;
+    padding: 16px;
+    background: rgba(233, 69, 96, 0.3);
+    border: 3px dashed @brbPink;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    // text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: @neonBrbPink;
+    }
+
+    .transform_icon {
+      transform: matrix(0.79, -0.63, 0.6, 0.78, 0, 0);
+    }
+
+    i {
+      position: absolute;
+      right: 25px;
+      top: 19px;
+    }
+  }
+
+  .main-row {
+    background: #fff9f8;
+    border-radius: 10px;
+    display: flex;
+    padding: 23px 70px;
+    margin-bottom: 15px;
+    align-items: center;
+    @media (max-width: 600px) {
+      padding: 15px;
+    }
+
+    .data-val {
+      width: 23%;
+      padding-right: 15px;
+      flex: 1 1 auto;
+      text-transform: capitalize;
+
+      &:last-child {
+        max-width: 150px;
+      }
+      &:nth-of-type(2) {
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      .flight-icon {
+        margin-right: 30px;
+      }
+    }
+
+    .data-val2 {
+      width: 30%;
+      padding-right: 15px;
+      flex: 1 1 auto;
+      text-transform: capitalize;
+
+      &:last-child {
+        max-width: 150px;
+      }
+      &:nth-of-type(2) {
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      .flight-icon {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.input-type-file {
+  width: 120px;
+  height: 120px;
+  position: relative;
+
+  background: linear-gradient(
+    0deg,
+    rgba(233, 69, 96, 0.3),
+    rgba(233, 69, 96, 0.3)
+  );
+  border-radius: 50%;
+  font-size: 12px;
+  color: @brbPink;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  span {
+    display: block;
+    text-align: center;
+
+    &:first-child {
+      font-size: 26px;
+    }
+  }
+
+  .input-file-label {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    position: absolute;
+    pointer-events: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  input {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    &:hover + .input-file-label {
+      opacity: 1;
+    }
+  }
+
+  div.header {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-radius: 50%;
+    border: 3px dashed @brbPink;
+    pointer-events: none;
+  }
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.5em;
+  font-size: 2rem;
+  color: var(--color);
+
+  &--disabled {
+    color: var(--disabled);
+  }
+}
+
+.checkbox__control {
+  display: inline-grid;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 0.1em solid currentColor;
+
+  svg {
+    transition: transform 0.1s ease-in 25ms;
+    transform: scale(0);
+    transform-origin: bottom left;
+  }
+}
+
+.checkbox__input {
+  display: grid;
+  grid-template-areas: "checkbox";
+
+  > * {
+    grid-area: checkbox;
+  }
+
+  input {
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+
+    &:focus + .checkbox__control {
+      box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+    }
+
+    &:checked + .checkbox__control svg {
+      transform: scale(1);
+    }
+
+    &:disabled + .checkbox__control {
+      color: var(--disabled);
+    }
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  // [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large monitor only"]:not(.mobile),
+  [class*="widescreen monitor only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+
+  .text-center {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .account-details {
+    background: #fff9f8;
+  }
+}

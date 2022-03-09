@@ -1,0 +1,33 @@
+export interface RevealedFlightType {
+    startDate: Date;
+    endDate: Date;
+    image: string;
+    tripType: string;
+    depTakeoffLocation: string;
+    depTakeoffAirportCode: string;
+    depLandingLocation: string;
+    depLandingAirportCode: string;
+    arrTakeoffAirportCode: string;
+    arrTakeoffLocation: string;
+    arrLandingAirportCode: string;
+    arrLandingLocation: string;
+    outboundDate: Date;
+    outboundTime: string;
+    returnDate: Date;
+    returnTime:string;
+    depCarrier: string;
+    arrCarrier: string;
+    depBookingReference: string;
+    arrBookingReference: string;
+    depBookingEmail: String;
+    arrBookingEmail: String;
+    status: string;
+    lateReturn: boolean;
+    hotelId: number;
+    hotelBookingReference: string;
+    roomType: string;
+    breakfastIncluded: boolean;
+    userId: number;
+    bags: string;
+    atolUrl: string;
+}

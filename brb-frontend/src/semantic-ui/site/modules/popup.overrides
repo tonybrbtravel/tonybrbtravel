@@ -1,0 +1,25 @@
+/*******************************
+        User Overrides
+*******************************/
+[data-tooltip]:not([data-position]):after {
+        @media (max-width: 767px) {
+                width: 300px;
+                white-space: normal;
+                transform: translateX(-265px) !important;
+        }
+        @media (max-width: 365px) {
+                transform: translateX(-34%) !important;
+        }
+}
+.slider-still-not-sure {
+      [data-tooltip]:not([data-position]):after {
+        @media (max-width: 767px) {
+                transform: translateX(-70%) !important;
+        }
+        @media (max-width: 365px) {
+
+                transform: translateX(-46%) !important;
+
+        }
+}
+}

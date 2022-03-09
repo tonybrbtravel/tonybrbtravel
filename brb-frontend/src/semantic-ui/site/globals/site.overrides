@@ -1,0 +1,77 @@
+/*
+@font-face {
+    font-family: 'CircularStdMedium';
+    src: url('../../fonts/CircularStdMedium/CircularStdMedium.eot');
+    src: url('../../fonts/CircularStdMedium/CircularStdMedium.eot') format('embedded-opentype'),
+         url('../../fonts/CircularStdMedium/CircularStdMedium.woff2') format('woff2'),
+         url('../../fonts/CircularStdMedium/CircularStdMedium.woff') format('woff'),
+         url('../../fonts/CircularStdMedium/CircularStdMedium.ttf') format('truetype'),
+         url('../../fonts/CircularStdMedium/CircularStdMedium.svg#CircularStdMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'CircularStdBold';
+    src: url('../../fonts/CircularStdBold/CircularStdBold.eot');
+    src: url('../../fonts/CircularStdBold/CircularStdBold.eot') format('embedded-opentype'),
+         url('../../fonts/CircularStdBold/CircularStdBold.woff2') format('woff2'),
+         url('../../fonts/CircularStdBold/CircularStdBold.woff') format('woff'),
+         url('../../fonts/CircularStdBold/CircularStdBold.ttf') format('truetype'),
+         url('../../fonts/CircularStdBold/CircularStdBold.svg#CircularStdBold') format('svg');
+}
+
+@font-face {
+    font-family: 'CircularStdBook';
+    src: url('../../fonts/CircularStdBook/CircularStdBook.eot');
+    src: url('../../fonts/CircularStdBook/CircularStdBook.eot') format('embedded-opentype'),
+         url('../../fonts/CircularStdBook/CircularStdBook.woff2') format('woff2'),
+         url('../../fonts/CircularStdBook/CircularStdBook.woff') format('woff'),
+         url('../../fonts/CircularStdBook/CircularStdBook.ttf') format('truetype'),
+         url('../../fonts/CircularStdBook/CircularStdBook.svg#CircularStdBold') format('svg');
+}
+
+@font-face {
+    font-family: 'CircularStdBlack';
+    src: url('../../fonts/CircularStdBlack/CircularStdBlack.eot');
+    src: url('../../fonts/CircularStdBlack/CircularStdBlack.eot') format('embedded-opentype'),
+         url('../../fonts/CircularStdBlack/CircularStdBlack.woff2') format('woff2'),
+         url('../../fonts/CircularStdBlack/CircularStdBlack.woff') format('woff'),
+         url('../../fonts/CircularStdBlack/CircularStdBlack.ttf') format('truetype'),
+         url('../../fonts/CircularStdBlack/CircularStdBlack.svg#CircularStdBlack') format('svg');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'CircularStdBook' !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: 'CircularStdBook' !important;
+}
+*/
+
+
+
+/* Undo font overrides
+ * Gotta be a better way...
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: Circular, sans-serif;
+}
+
+ */

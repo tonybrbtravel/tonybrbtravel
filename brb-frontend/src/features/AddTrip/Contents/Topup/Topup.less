@@ -1,0 +1,77 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+.topup-payment-content {
+  border-radius: 12px !important;
+  .ui.header {
+    margin-bottom: 20px;
+  }
+  text-align: center;
+  background-color: @brbOffwhite !important;
+  &.ui.tiny.modal {
+    max-width: 400px;
+  }
+  .trip-price {
+  }
+}
+
+.modal.topup-payment {
+  max-width: 370px;
+}
+
+.topup-header-content {
+  font-weight: bold;
+}
+
+.topup-price {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.trip-offers {
+  width: auto;
+  display: inline-block;
+  margin: 2rem 4rem 3rem;
+
+  li {
+    list-style-image: url("../../../../images/check-mark.svg");
+    font-size: 18px;
+    line-height: 23px;
+    padding: 5px;
+    text-align: left;
+    color: @brbBlue;
+  }
+}
+
+.proceed-to-pay {
+  text-align: center;
+}
+
+.trip-balance-details {
+  p {
+    font-size: 1rem;
+    line-height: 0.9em;
+
+    &.big {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: .5rem;
+
+      &.price {
+        color: @brbPink;
+        font-size: 3rem;
+        margin: 0;
+      }
+    }
+  }
+}

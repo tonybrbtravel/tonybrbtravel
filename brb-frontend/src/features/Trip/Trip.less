@@ -1,0 +1,41 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../theme.config";
+
+.Trip {
+  .main-section-wrapper {
+    background-color: @white;
+  }
+
+  // semantic-ui overrides for tabs
+  .ui.secondary.menu {
+    display: flex;
+    justify-content: center;
+    background-color: @brbBlue;
+    padding-bottom: 1rem;
+    margin: 0;
+
+    a.item {
+      color: @brbOffwhite;
+      border: 2px solid @brbPink;
+
+      &.active {
+        color: @brbOffwhite;
+        background-color: @brbPink;
+
+        &:hover {
+          color: @brbOffwhite;
+          background-color: @brbPink;
+          box-shadow: @neonBrbPink;
+        }
+      }
+
+      &:hover {
+        color: @brbOffwhite;
+        box-shadow: @neonBrbPink;
+      }
+    }
+  }
+}

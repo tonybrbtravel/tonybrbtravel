@@ -1,0 +1,36 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /ops
+spring:
+  application:
+    name: ops
+  datasource:
+    url: jdbc:postgresql://localhost:5432/brb_master
+    username: dora
+    password: 87bnlw98234uhbfw9y43b47
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_cFO6vnVsl
+  data:
+    rest:
+      basePath: /ops
+cognito:
+  endpoint: https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_cFO6vnVsl/.well-known/jwks.json
+logging:
+  level:
+    root: INFO
+services:
+  urls:
+    subscription-service: http://localhost:8081/subscription/
+    trip-service : http://localhost:8082/trip/
+    user-profile-service: http://localhost:8080/user/profile/
+web:
+  url: http://localhost:3000/

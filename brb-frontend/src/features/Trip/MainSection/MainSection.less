@@ -1,0 +1,110 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+
+@import (multiple) "../../../semantic-ui/theme.config";
+
+.trip-main-section {
+  color: @brbBlue;
+  font-size: 16px;
+  padding: @mediumSpacer 0;
+
+  .star-rating {
+    margin-top: 15px;
+    svg {
+      width: 20px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    &.checking-in-ul {
+      li {
+        position: relative;
+        padding-left: 30px;
+        list-style: none;
+        margin-bottom: 15px;
+        color: rgba(26, 26, 46, 80%);
+        svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    &.disc-ul {
+      li {
+        position: relative;
+        padding-left: 1em;
+        line-height: 1.4;
+        color: rgba(26, 26, 46, 80%);
+        &:before {
+          content: "";
+          width: .5em;
+          height: .5em;
+          display: block;
+          position: absolute;
+          top: .35em;
+          left: 0;
+          background: @brbPink;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .location-info {
+    margin-bottom: 30px;
+    p.info {
+      position: relative;
+      padding-left: 2em;
+      line-height: 1.2;
+      svg {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: .1em;
+        width: 1em;
+        height: 1em;
+
+      }
+    }
+    .ui.rating {
+      .icon {
+        color: #fff !important;
+        -webkit-text-stroke: 1px @brbPink;
+      }
+      .icon.active {
+        color: @brbPink !important;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    span {
+      color: @brbPink;
+    }
+  }
+
+  h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 1.5em;
+    span {
+      color: @brbPink;
+    }
+    .not-included {
+      font-size: 1.2em;
+    }
+  }
+
+  .not-included {
+    font-size: 1.2em;
+  }
+
+}

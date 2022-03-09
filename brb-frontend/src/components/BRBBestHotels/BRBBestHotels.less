@@ -1,0 +1,130 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+        .brb_best_hotels {
+            padding: 30px 0px;
+            background: #FFF9F8;
+
+            @media @tablet-down  {padding:61px 0px;}
+            .brb-hotels-wrap {
+                max-width: 910px;
+                margin: 0 auto;
+            }
+        }
+        .ui.card.custom-card{
+            background: url('../../images/Rectangleshadow.png') repeat-x !important;
+            border-radius: 2px !important;
+            max-height: 250px;
+            overflow: hidden;
+
+            img {
+                width: auto;
+                position: relative;
+                height: 250px;
+                min-width: 100%;
+                object-fit: cover;
+                object-position: center;
+
+            }
+        }
+        .shadow-container{
+            background: url('../../images/Rectangleshadow.png') repeat-x !important;
+            position: absolute;
+            width: 100%;
+            height:100%;
+        }
+        .shadow-container > .content{
+            position: absolute !important;
+            top: 10px !important;
+            left: 20px !important;
+        }
+        .shadow-container > .content > .header:not(.ui) {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            @media (max-width: 767px) {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .ui.cards > .card .meta, .ui.card .meta {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px !important;
+            line-height: 23px;
+            color: #fff !important;
+        }
+        .ui.card .shadow-container .content.extra {
+            position: absolute !important;
+            top: 86% !important;
+            background: linear-gradient(180deg, rgba(13, 13, 13, 0) 46.88%, rgba(0, 0, 0, 1) 97.4%) !important;
+            width: 100% !important;
+            padding: 10px !important;
+            left: 0px !important;
+        }
+        .ui.card .content.extra .ui.star.rating .icon {
+            text-shadow: 0px -1px 0px #fff, -1px 0px 0px #fff, 0px 1px 0px #fff, 1px 0px 0px #fff !important;
+            color: rgba(0, 0, 0, 1);
+            opacity: .5;
+        }
+        .ui.card .content.extra .ui.star.rating .active.icon {
+            background: transparent !important;
+            color: #fff !important;
+            text-shadow: 0px -1px 0px #fff, -1px 0px 0px #fff, 0px 1px 0px #fff, 1px 0px 0px #fff !important;
+        }
+
+        .ui.header.best_hotels {
+                font-size: 2rem;
+                line-height: 61px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+
+                /* Primary */
+
+                color: @brbBlue;
+
+                strong {
+                    color: @brbPink;
+                }
+
+                @media @tablet-down  {font-size: 24px; line-height:30px;}
+
+        }
+
+        .hotel_collection {
+            font-size: 16px;
+            @media @tablet-down  {font-size: 16px; line-height: 20px; font-weight: bold; }
+
+        }
+        .hide-in-mobile {
+            @media (max-width:767px) {
+                display: none;
+            }
+        }
+
+        .hotel-reviews-collection {
+            .ui.button.brb-button{
+                background: #FFF9F8 !important;
+                color: @brbPink !important;
+                border: 1px solid @brbPink;
+                width: 255px;
+                font-weight: bold;
+            }
+            @media @tablet-down  { .hotel-reviews-collection-btn { text-align: center; font-size: 16px;} }
+        }
+
+}

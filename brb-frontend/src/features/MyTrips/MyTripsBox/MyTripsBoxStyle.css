@@ -1,0 +1,23 @@
+.mytrip-tabs{margin: 1rem 0 0;}
+
+.mytrip-boxes-wrap{padding: 3rem 0 0;}
+.mytrip-boxes{margin: 2rem 0;}
+.mytrip-boxes .banner-trip-box{padding: 17px;background: rgba(255, 255, 255, 0.81);width: 100%;position: inherit;}
+.mytrip-boxes .banner-trip-box .banner-count-box{padding: 8px;}
+.mytrip-boxes .banner-trip-box .banner-count-box input{font-size: 20px;width: 40px;}
+.mytripbox-head{min-height: 200px;background: url('../../../images/room2.jpg') no-repeat center;background-size: cover;padding: 40px;border-radius: 10px 10px 0 0;}
+.trip-count-title {background:rgba(0, 0, 0, 0.84);padding: 2px;color: #fff;border-radius: 4px;margin-bottom: 10px;}
+.trip-count-title h4{margin: 0;font-size: 20px;padding: 5px;}
+
+.mytrip-boxes .banner-trip-box li p{margin-bottom: 2px;}
+
+.mytripbox-content{background: #fff;padding: 15px 20px;border-radius: 10px;}
+.mytripbox-location h4{margin: 0;font-size: 16px;font-weight: 600;padding:5px 0;}
+.mytipbox-dates{display: flex;justify-content: space-between;border-bottom: 1px solid rgba(0, 0, 0, 0.12);border-top: 1px solid rgba(0, 0, 0, 0.12);padding: 13px 0;margin: 12px 0;}
+.mytipbox-dates p{margin: 0;}
+.mytipbox-dates h3{font-size: 20px;font-weight: 800;}
+.mytipbox-dates img{transform: rotate(-90deg);width: 20px;}
+.mytripbox-details p{font-weight: 800;margin: 0 0 5px;font-size: 16px;}
+.mytripbox-details ul{padding: 0 0 0 20px;}
+
+.mytripbox-btns{display: flex;justify-content: space-around;}

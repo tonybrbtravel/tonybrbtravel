@@ -1,0 +1,23 @@
+/*******************************
+         Site Overrides
+*******************************/
+.sign-up{
+.ui.form input:not([type]), .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="email"], .ui.form input[type="number"], .ui.form input[type="password"], .ui.form input[type="search"], .ui.form input[type="tel"], .ui.form input[type="time"], .ui.form input[type="text"], .ui.form input[type="file"], .ui.form input[type="url"]{
+    height:40px;
+    background :#ECECEC;
+}
+.ui.form input:not([type]):focus, .ui.form input[type="date"]:focus, .ui.form input[type="datetime-local"]:focus, .ui.form input[type="email"]:focus, .ui.form input[type="number"]:focus, .ui.form input[type="password"]:focus, .ui.form input[type="search"]:focus, .ui.form input[type="tel"]:focus, .ui.form input[type="time"]:focus, .ui.form input[type="text"]:focus, .ui.form input[type="file"]:focus, .ui.form input[type="url"]:focus{
+    background :#ECECEC;
+    border:1px solid #E94560;
+}
+.ui.form .field > label{
+    font-size:1rem;
+    font-weight:normal;
+   
+}
+ .error > label {
+        color: #000
+    }
+    
+
+}

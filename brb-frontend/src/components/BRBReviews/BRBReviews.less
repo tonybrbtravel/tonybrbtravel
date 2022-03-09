@@ -1,0 +1,125 @@
+
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+
+    .blue-bg {
+        background: @brbBlue;
+        padding-top:55px;
+        padding-bottom: 55px;
+
+        @media @tablet-down  {
+            padding-top:34px;
+        }
+        &.trust-pilot-wrap {
+            .banner-heading {
+                max-width: 325px;
+            }
+            @media (max-width: 767px) {
+                .ui.cards > .card .content img, .ui.card .content img {
+                    width: 70px;
+                }
+            }
+        }
+    }
+
+    .trust_pilot {
+
+        p{
+            max-width: 350px;
+            font-size: 28px;
+            line-height: 35px;
+            letter-spacing: -0.02em;
+            color: @brbPink;
+        }
+
+        @media @tablet-down  {
+            .btn-common.btn-primary {
+                margin-bottom: 40px;
+                display: inline-block;
+            }
+            .banner-heading {
+                max-width: 100%;
+            }
+            p {
+                font-size: 18px;
+                line-height: 20px;
+                padding-bottom: 25px;
+            }
+            .text-center-m {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    .review_description {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+
+        /* Secondary */
+        a.btn-common.btn-primary {
+            padding: 14px 35px;
+            font-size: 16px;
+            color: #f01d52;
+            border: 1px solid @brbPink;
+            box-sizing: border-box;
+            border-radius: 4px;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    .ui.card.reviews {
+
+        background: #EAEDF1 !important;
+        border-radius: 5px !important;
+        padding: 10px !important;
+        width: 100% !important;
+        margin: 5px 10px !important;
+        @media @tablet-down  {
+            margin: 5px 50px !important;
+        }
+
+        .header {
+            font-size: 24px !important;
+            line-height: 35px !important;
+            letter-spacing: -0.02em;
+            @media @tablet-down  { font-size: 20px !important; line-height: 20px !important; }
+        }
+
+        .meta {
+            font-size: 20px !important;
+            color: rgba(0,0,0,0.85) !important;
+            @media @tablet-down  { font-size: 20px !important;  }
+        }
+
+        .description {
+            font-size: 16px !important;
+            color: rgba(0,0,0,0.85) !important;
+            overflow: hidden;
+            @media @tablet-down  { font-size: 14px !important;  }
+        }
+
+
+
+        img {
+            height: 23px;
+
+        }
+    }
+
+}

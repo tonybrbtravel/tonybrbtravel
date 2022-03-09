@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFoundPage /> should match snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="ui container module-container"
+    >
+      <div
+        class="p-os-header-menu"
+      >
+        <div
+          class="title-section"
+        >
+          <div
+            class="ui mini breadcrumb"
+          >
+            <div
+              class="divider"
+            >
+              /
+            </div>
+            <a
+              class="section"
+            >
+              Growth
+            </a>
+          </div>
+          <h1
+            class="ui center aligned header"
+          >
+            Not found
+          </h1>
+        </div>
+        <div
+          class="p-os-header-menu__bottom"
+        >
+          <div
+            class="ctaContent"
+          >
+            <div />
+          </div>
+        </div>
+      </div>
+      <main
+        class=""
+      >
+        <div
+          class="ui centered three column grid"
+        >
+          <div
+            class="column"
+          >
+            <div
+              class="ui card"
+            >
+              Sorry, could not find that page.
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Group_53" data-name="Group 53" transform="translate(-365 -307)">
+    <g id="Ellipse_38" data-name="Ellipse 38" transform="translate(365 307)" fill="none" stroke="#2d3a4b" stroke-width="1">
+      <circle cx="17" cy="17" r="17" stroke="none"/>
+      <circle cx="17" cy="17" r="16.5" fill="none"/>
+    </g>
+    <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(368.5 310.5)">
+      <path id="Path_73" data-name="Path 73" d="M18.678,18H7.5" transform="translate(0 -4.911)" fill="none" stroke="#2d3a4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_74" data-name="Path 74" d="M13.089,18.678,7.5,13.089,13.089,7.5" fill="none" stroke="#2d3a4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

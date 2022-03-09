@@ -1,0 +1,52 @@
+image: node:16.13-bullseye
+variables:
+  AWS_DEFAULT_REGION: 'eu-west-1'
+
+before_script:
+  #  - npm install --unsafe-perm
+  - apt update
+  - apt install -y python3-pip
+  - pip3 install awscli
+  - npm install -g gatsby-cli@2.17.0
+#  - yarn
+#  - yarn global add gatsby-cli@2.17.0
+
+cache:
+  paths:
+  # - node_modules/
+
+stages:
+  - build
+
+staging:
+  variables:
+    SOURCEMAP_PATH: 'staging.berightback.travel'
+    ACTIVE_ENV: 'development'
+  stage: build
+  environment: { name: staging, url: 'https://staging.berightback.travel' }
+  artifacts:
+    paths:
+      - public
+  only:
+    - develop
+  script:
+    - ACTIVE_ENV=development
+    - npm install
+    - gatsby build
+    - aws s3 sync public/ s3://beta.berightback.travel --acl public-read --cache-control public,max-age=300 --delete --exclude="*.map"
+    - aws s3 sync public/ s3://beta.berightback.travel --acl public-read --cache-control public,max-age=100 --exclude="*" --include="*.html"
+    - aws s3 sync public/ s3://beta.berightback.travel/maps_secret --acl public-read --cache-control public,max-age=300 --exclude "*" --include="*.map"
+production:
+  variables:
+    SOURCEMAP_PATH: 'goandtravel.co.uk'
+  stage: build
+  environment: { name: production, url: 'https://berightback.travel' }
+  only:
+    - master
+  script:
+    - ACTIVE_ENV=production
+    - npm install
+    - gatsby build
+    - aws s3 sync public/ s3://beta.berightback.travel --acl public-read --cache-control public,max-age=3600 --delete --exclude="*.map"
+    - aws s3 sync public/ s3://beta.berightback.travel --acl public-read --cache-control public,max-age=300 --exclude="*" --include="*.html"
+    - aws s3 sync public/ s3://beta.berightback.travel/maps_secret --acl public-read --cache-control public,max-age=3600 --exclude "*" --include="*.map"

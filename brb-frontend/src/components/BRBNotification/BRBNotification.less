@@ -1,0 +1,97 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../theme.config";
+
+.Toastify .brb-notification-container__container {
+  @media (max-width: 480px) {
+    top:10px;
+  }
+}
+
+.brb-notification {
+  width: 465px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  color: #fff;
+  box-shadow: none;
+  position: relative;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
+  @media (max-width: 480px) {
+    width: calc(100% - 15px);
+    left: 15px;
+  }
+  .close {
+    margin: 0;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    @media (max-width: 480px) {
+      width: 15px !important;
+      height: 15px !important;
+    }
+
+  }
+
+  &:not(.inverted) {
+    background: @brbPink;
+    color: #fff;
+  }
+
+  a {
+    color: @brbBlue;
+    font-weight: 700;
+  }
+
+  &.success {
+    background: @brbBlue;
+  }
+
+  .image {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    width: calc(100% - 40px);
+    display: flex;
+    color: #fff;
+    font-size: @small;
+
+    .header {
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+
+    .text {
+      font-size: .92rem;
+      line-height: 1.2;
+    }
+  }
+
+  .footer {
+    font-weight: @bold;
+    text-transform: uppercase;
+    font-size: @tiny;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+    .link {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+}

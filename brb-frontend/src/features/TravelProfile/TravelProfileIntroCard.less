@@ -1,0 +1,86 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+  .ui.card.profile-segment {
+    padding: 25px 20px 15px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+
+    & .ui.two.buttons {
+      padding-bottom: 25px;
+    }
+    & .header {
+      font-size: 24px !important;
+      margin-bottom: 30px;
+      span {
+        display: block;
+      }
+      strong {
+        color: @brbPink;
+      }
+    }
+
+    & .description {
+      font-size: 16px;
+      color: @brbBlue;
+      margin-top: 0.5em;
+    }
+
+    .extra.content {
+      border: none !important;
+      .ui.two.buttons > .button {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    & .earn-points {
+      font-size: @tiny;
+      font-weight: normal;
+    }
+
+    .progress-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .progress {
+        width: 75%;
+      }
+      img {
+        width: 30px;
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+
+  .selected-type {
+    position: sticky;
+    top: 0;
+  }
+
+  @media only screen and (max-width: @smallPoint) {
+    .ui.card.profile-segment {
+      width: auto;
+      margin: 0 0 30px;
+      padding: 10px;
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+}

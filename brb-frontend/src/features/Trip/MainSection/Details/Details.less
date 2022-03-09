@@ -1,0 +1,54 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+
+.trip-image-content {
+  & .swiper-container {
+    & .swiper-pagination-bullets {
+      bottom: 40px;
+      & .swiper-pagination-bullet {
+        background: transparent;
+        border: 1px solid #849194;
+        opacity: 1;
+      }
+      & .swiper-pagination-bullet-active {
+        background: #849194;
+        border: 1px solid #849194;
+      }
+    }
+  }
+  .brb-swiper {
+    padding: 0px;
+    .swiper-slide {
+      width: 100% !important;
+      height: 300px !important;
+      @media (max-width: 767px) {
+        width: 250px !important;
+        height: 250px !important;
+      }
+    }
+  }
+}
+.location-info {
+  a {
+    color: @brbPink;
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .hotel-info {
+    margin-bottom: .5rem;
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+
+  #root {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    width: 320px;
+    height: 61px;
+    top: 3235px;
+    left: 558px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-left: 40%;
+  }
+  .postion-heading {
+    padding-top: 100px;
+  }
+  .flexBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .box-scale {
+    width: 113px;
+    height: 6px;
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    top: 3384px;
+    left: 537px;
+    border-radius: 32px;
+  }
+
+  h3 {
+    align-items: center;
+    margin-right: 85px;
+    color: #ffffff;
+  }
+
+  .displayBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .bgimage {
+    background: url("../MyTrips/image/image1.jfif");
+    opacity: 2.8;
+    background-size: cover;
+    height: 714px;
+    width: 100%;
+  }
+
+  .backGroundColor {
+    background-color: #1a1a2e;
+    height: 1000px;
+  }
+  .content-slider-in {
+    padding-top: 50px;
+    position: relative;
+    padding-left: 45%;
+    border: 2px solid red;
+  }
+
+  .slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 500px;
+    padding-top: 210px;
+  }
+
+  .divSizing {
+    margin-left: 100px;
+  }
+
+  .textSlide {
+    width: 1000px;
+    height: 200px;
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    margin-top: -146px;
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    margin-top: -146px;
+  }
+
+  .hourDisplay {
+    border: 1px solid;
+    width: 60px;
+    height: 80px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+  }
+
+  .smallHeaderPost {
+    margin-left: 13px;
+    margin-top: 39px;
+    text-decoration: underline;
+  }
+
+  .text-align {
+    margin-left: 431px;
+    margin-top: 4%;
+  }
+
+  .cardImage {
+    background: url("../MyTrips/image/image2.jfif");
+    opacity: 2.8;
+    background-size: cover;
+  }
+
+  .cardAllignment {
+    margin-left: 89px;
+  }
+
+  .cardBcakground {
+    background-color: #fff9f8;
+    height: 412px;
+  }
+
+  .tripDetails {
+    font-family: sans-serif;
+    height: 30px;
+    margin-left: 35px;
+    padding-top: 40px;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .flexBox {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+

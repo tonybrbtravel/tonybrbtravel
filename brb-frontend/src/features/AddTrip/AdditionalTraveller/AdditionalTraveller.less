@@ -1,0 +1,140 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+.select-traveldate {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+.select-traveldate h2 {
+  font-weight: 800;
+  margin: 20px 0;
+}
+.select-traveldate h3 {
+  font-weight: 700;
+  margin: 20px 0;
+}
+.btn-remove {
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.additional-traveller {
+  .additional-traveller-scroller {
+    overflow-y: auto;
+  }
+  .add-traveller-dropdown {
+    margin-bottom: 35px !important;
+
+    .dropdown {
+      opacity: 1  !important;
+      cursor: not-allowed !important;
+    }
+    .dropdown-left {
+      top: 20px !important;
+    }
+    .tick-mark {
+      z-index: 1 !important;
+    }
+  }
+  .ui.selection.dropdown > .search.icon,
+  .ui.selection.dropdown > .delete.icon,
+  .ui.selection.dropdown > .dropdown.icon {
+    top: 18px;
+  }
+  & .inverted.button {
+    background: black;
+    padding: 14px 30px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  & .content {
+    padding: 30px !important;
+    width: 100%;
+    img:first-child {
+      width: 30px;
+      margin-bottom: 0px;
+      float: left;
+    }
+  }
+  & .dropdown_icon {
+    margin-bottom: 20px;
+    & .header {
+      margin: 0 !important;
+      text-transform: capitalize;
+    }
+    & .ui.dropdown:not(.disabled) {
+      line-height: 54px;
+      max-height: 100px;
+      padding: 0px;
+      font-weight: bold;
+    }
+    & .dropdown-left {
+      font-size: 21px;
+      position: relative;
+      top: 18px;
+      padding-left: 15px;
+      padding-right: 0;
+      z-index: 1000;
+    }
+    .ui.dropdown,
+    .ui.dropdown .visible.menu,
+    .ui.dropdown.visible,
+    .ui.dropdown:focus,
+    .ui.dropdown:hover,
+    .ui.dropdown:visited,
+    .ui.dropdown:active {
+      border: 1px solid @brbPink;
+
+      .default.text {
+        color: black !important;
+        padding-top: 10px;
+        line-height: 24px;
+        div {
+          font-weight: normal;
+        }
+      }
+    }
+    .ui.dropdown .visible.menu:focus,
+    .ui.dropdown .visible.menu:hover,
+    .ui.dropdown .visible.menu:visited,
+    .ui.dropdown .visible.menu:active {
+      border: 1px solid @brbPink;
+      z-index: 2000;
+    }
+    .ui.active.visible.fluid.selection.upward.dropdown {
+      border: 1px solid @brbPink;
+    }
+  }
+
+  .ui.image.backIcon {
+    margin-left: -30px;
+    cursor: pointer;
+  }
+
+  .ui.image.closeIcon {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  h2 {
+    margin-top: 0 !important;
+  }
+  @media (max-width: 767px) {
+    .dropdown .ui.header {
+      text-align: left !important;
+    }
+  }
+
+}

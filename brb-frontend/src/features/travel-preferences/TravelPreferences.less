@@ -1,0 +1,28 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.travelPreferenceCards {
+  padding-bottom: 100px;
+  .ui.form {
+    padding-top: 50px;
+  }
+}
+
+.trip-types-preferences {
+  input {
+    border:1px solid @brbPink !important;
+    border-radius: 10px;
+  }
+  .ui.selection.dropdown {
+    border:1px solid @brbPink !important;
+  }
+}

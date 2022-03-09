@@ -1,0 +1,12 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.text.menu {
+    color: #fff;
+    @media (max-width:767px) {
+        display: none;
+    }
+    .item {
+        color:#fff;
+    }
+}

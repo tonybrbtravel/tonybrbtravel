@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<POSSwiper /> should match snapshot 1`] = `
+<div>
+  <div
+    class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode pos-swiper"
+    slides="[object Object]"
+  >
+    <div
+      class="swiper-wrapper"
+      style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+    >
+      <div
+        class="swiper-slide"
+      >
+        <div>
+          test
+        </div>
+      </div>
+    </div>
+    <div
+      class="pos-swiper__nav pos-swiper__nav--prev"
+    >
+      <button
+        class="ui medium circular icon secondary left labeled button p-os-button icon-only"
+      >
+        <i
+          aria-hidden="true"
+          class="icon pos arrow-left"
+        />
+      </button>
+    </div>
+    <div
+      class="pos-swiper__nav pos-swiper__nav--next"
+    >
+      <button
+        class="ui medium circular icon secondary left labeled button p-os-button icon-only"
+      >
+        <i
+          aria-hidden="true"
+          class="icon pos arrow-right"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

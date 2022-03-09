@@ -1,0 +1,144 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+
+
+/*******************************
+            Break Points
+*******************************/
+@smallPoint: 450px;
+@mediumPoint: 768px;
+@largePoint: 1024px;
+@extraLargePoint: 1440px;
+
+@tablet-down: ~'(max-width: 767px)';
+
+@mobile-min: ~'(min-width: 768px)';
+
+
+/*******************************
+            Sizes
+*******************************/
+// See src/themes/Metrics.js
+@tinySpacer: 18px;
+@smallSpacer: 30px;
+@mediumSpacer: 45px;
+@bigSpacer: 60px;
+@hugeSpacer: 120px;
+@navHeight: 100px;
+@navHeightCollapsed: 75px;
+
+/*******************************
+            Colors
+*******************************/
+// See src/themes/Colors.js
+@brbPink: #e94560;
+@brbBlue: #1a1a2e;
+@brbOffwhite: #eef1f6;
+@brbWhite: #fff9f8;
+@brbPinkTranslucent: #e94560cc;
+@brbBlueTranslucent: #1a1a2ecc;
+@brbOffwhiteTranslucent: #eef1f6cc;
+@brbWhiteTranslucent: #fff9f8cc;
+
+@brbPinkActive: lighten(@brbPink, -10%);
+
+@primaryColor: @brbPink;
+
+@black: #000000;
+@redDark: #B00D0D;
+@redHover: #FF0000;
+@blue: #1577F2;
+@lightBlue: #DFECFD;
+@orange: #FF6100;
+@lightOrange: #FFBE78;
+@green: #4EEC6C;
+@shadow: rgba(100, 100, 150, 0.3);
+@lightShadow: #E7E7F0;
+@yellow: #FFEB34;
+@darkGrey: #707070;
+@lightGrey: #C2C5D0;
+@lightSlateGrey: #ECECEC;
+@offWhite: #fafafa;
+
+/*******************************
+            Links
+*******************************/
+
+@linkColor: @brbPink;
+@linkUnderline: none;
+@linkHoverColor: @brbPinkActive;
+@linkHoverUnderline: none;
+
+/*******************************
+            Shadow
+*******************************/
+
+@neonBrbPink: 0 0 5px @brbPink, 0 0 15px @brbPink;
+
+@shadowDefault: 2px 2px 6px rgba(0, 0, 0, .5);
+@shadowLight: 4px 4px 10px rgba(0, 0, 0, .15);
+@shadowHeavy: 2px 2px 5px rgba(0, 0, 0, .75);
+@shadowDetail: 1px 1px 3px rgba(0, 0, 0, .5);
+@shadowBlockDown: 0 -15px 10px 15px  rgba(0, 0, 0, .15);
+@shadowBlockUp: 0 15px 10px 15px  rgba(0, 0, 0, .15);
+
+
+/*******************************
+            transition
+*******************************/
+
+    @transitionDefault: 250ms;
+    @transitionSlow: 750ms;
+
+
+/*******************************
+            Gradients
+*******************************/
+
+  @gradientSunset: linear-gradient(to top right,@red,#ffc371);
+  @gradientClearSky: linear-gradient(to top right, #005C97, #363795);
+  @gradientEmerald: linear-gradient(to top right, #135058, #F1F2B5);
+  @gradientLuxury: linear-gradient(to top right, #dc2430, #7b4397);
+  @gradientTurquoise: linear-gradient(to top right, #136a8a, #267871);
+  @gradientRiver: linear-gradient(to top right, #185a9d, #43cea2);
+  @gradientDawn: linear-gradient(to top right, #00223E, #FFA17F);
+  @gradientClouded: linear-gradient(to top right, #373b44, #73c8a9);
+  @gradientPaleSky: linear-gradient(to top right, #83a4d4, #b6fbff);
+  @gradientCherryBlossom: linear-gradient(to top right, #BB377D, #FBD3E9);
+  @gradientGrey: linear-gradient(to top right, #EEF4F7, #D0DBE4);
+  @gradientDark: linear-gradient(to top right, #100E17, #35577A);
+
+/*******************************
+            Spacers
+*******************************/
+
+
+@tinySpacer:  unit((18 / 16), rem);
+ @smallSpacer:  unit((30 / 16), rem);
+  @bigSpacer:  unit((60 / 16), rem);
+  @hugeSpacer:  unit((120 / 16), rem);
+/* End Config */
+
+
+/**************************************
+              Font
+***************************************/
+
+@miniSize: (10 / 16);
+@tinySize: (12 / 16);
+@smallSize: (14 / 16);
+@mediumSize: (16 / 16);
+@largeSize: (18 / 16);
+@bigSize: (20 / 16);
+@hugeSize: (24 / 16);
+@massiveSize: (28 / 16);
+
+@checkboxRadioHeightWidth: 22px;
+
+@bold: 700;
+@normal: 400;
+
+@headerFont: Circular, sans-serif;
+@pageFont: Circular, sans-serif;

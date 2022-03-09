@@ -1,0 +1,80 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.mytrip-brb-swiper {
+  padding: 1.5rem 3rem 1.5rem 2rem;
+  &--next {
+    right: 1px !important;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.brb-swiper {
+  padding: 1.5rem 3rem 1.5rem 2.5rem;
+  @media (max-width: 767px) {
+    padding: 1.5rem 3rem 1.5rem 3.3rem;
+  }
+
+  &::after {
+    content: " ";
+    height: 100%;
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--prev {
+      left: 10px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &--next {
+      right: 15px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.3;
+    }
+  }
+}
+
+.swiper-pagination {
+  bottom: 0px !important;
+  .swiper-pagination-bullet {
+    background: rgba(233, 69, 96, 0.2);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: @brbPink;
+    border: 1px solid @brbPink;
+  }
+}

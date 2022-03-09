@@ -1,0 +1,51 @@
+image: node:latest
+variables:
+  AWS_DEFAULT_REGION: 'eu-west-1'
+
+before_script:
+  #  - npm install --unsafe-perm
+  - apt update
+  - apt install -y python3-pip
+  - pip3 install awscli
+
+cache:
+  paths:
+  # - node_modules/
+
+stages:
+  - build
+
+staging:
+  variables:
+    SOURCEMAP_PATH: 'staging.berightback.travel'
+    ACTIVE_ENV: 'development'
+  stage: build
+  environment: { name: staging, url: 'https://staging.berightback.travel' }
+  artifacts:
+    paths:
+      - public
+  only:
+    - develop
+  script:
+    - ACTIVE_ENV=development
+    - cp .env.staging.template .env
+    - yarn install --pure-lockfile
+    - CI=false NODE_OPTIONS=--openssl-legacy-provider yarn run build
+    - aws s3 sync build/ s3://staging.berightback.travel --acl public-read --cache-control public,max-age=300 --delete --exclude="*.map"
+    - aws s3 sync build/ s3://staging.berightback.travel --acl public-read --cache-control public,max-age=100 --exclude="*" --include="*.html"
+    - aws s3 sync build/ s3://staging.berightback.travel/maps_secret --acl public-read --cache-control public,max-age=300 --exclude "*" --include="*.map"
+production:
+  variables:
+    SOURCEMAP_PATH: 'goandtravel.co.uk'
+  stage: build
+  environment: { name: production, url: 'https://berightback.travel' }
+  only:
+    - master
+  script:
+    - ACTIVE_ENV=production
+    - cp .env.production.template .env
+    - yarn install --pure-lockfile
+    - CI=false NODE_OPTIONS=--openssl-legacy-provider yarn run build
+    - aws s3 sync build/ s3://app1.berightback.travel --acl public-read --cache-control public,max-age=3600 --delete --exclude="*.map"
+    - aws s3 sync build/ s3://app1.berightback.travel --acl public-read --cache-control public,max-age=300 --exclude="*" --include="*.html"
+    - aws s3 sync build/ s3://app1.berightback.travel/maps_secret --acl public-read --cache-control public,max-age=3600 --exclude "*" --include="*.map"

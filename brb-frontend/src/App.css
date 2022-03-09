@@ -1,0 +1,20 @@
+.App {
+ }
+
+ .nav-link{color: #010101;}
+ .nav-link:hover{color: #f01d52;}
+ 
+ .btn-primary{background: #f01d52;color: #fff;border: 0;margin: 20px 0;}
+ .btn-secondary{background: #6c757d;color: #fff;border: 0;margin: 20px 0;}
+ .btn-primary:hover{background: #f01d52;opacity: .7;}
+ .btn-points{border: 2px solid #010101;padding: 10px 20px;font-size: 18px;color: #010101;display: inline-block;}
+ 
+ .back-btn {float: left;}
+
+.select-traveldate {padding: 2rem;text-align: center;background: #fff;border-radius: 10px;margin: 2rem 0;}
+.select-traveldate h2{font-weight: 800;margin: 20px 0;color: #f01d52;}
+.select-traveldate h3{font-weight: 700;margin: 20px 0;}
+
+.select-traveldate .form-group{text-align: left;}
+.select-traveldate label{font-size: 18px;font-weight: 700;}
+.date-picker-wrap{overflow: auto;border: 1px solid #e0e0e0;padding: 15px 0;border-radius: 10px;margin: 2rem 0;}

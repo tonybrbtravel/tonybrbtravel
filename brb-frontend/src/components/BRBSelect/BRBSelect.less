@@ -1,0 +1,30 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+.brb-select {
+  & .brb-check-select {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+  & .header {
+    margin-bottom: 15px !important;
+    @media (max-width: 767px) {
+      margin-bottom: 5px!important;
+    }
+  }
+  & .flag {
+    vertical-align: middle;
+    font-size: @medium;
+    padding-left: 10px;
+    justify-content: center;
+  }
+}

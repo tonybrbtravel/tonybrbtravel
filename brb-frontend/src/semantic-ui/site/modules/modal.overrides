@@ -1,0 +1,74 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.modal {
+    border-radius: 19px;
+    h2.ui.header {
+        font-size: 1.5rem;
+    }
+    .ui.header {
+        .content {
+            font-size: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .close-modal {
+            cursor:pointer;
+            width: 13px !important;
+            top: 15px;
+            right: 5px;
+        }
+        img {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .ui.header {
+            padding-top:0;
+            font-size: 1em;
+            margin-top:0;
+            text-align: center;
+        }
+        .ui.header > .image:not(.icon), .ui.header > img {
+            width: 13px !important;
+            height: 13px !important;
+            display: none;
+
+        }
+        .ui.floated.images:last-child, .ui.floated.image:last-child {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+.ui.modal > :first-child:not(.icon), .ui.modal > .icon:first-child + * {
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.ui.modal > :last-child {
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+.ui.modal > .header {
+    border-bottom: none;
+    text-align: left;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+
+}
+.ui.modal .scrolling.content {
+   /* max-height: calc(100vh - 210px);*/
+    margin-bottom: 100px;
+    padding-top: 0 !important;
+}
+.ui.modal > .content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    .sticky-button {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}

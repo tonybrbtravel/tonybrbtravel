@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/location</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/location" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(46.000000, 40.000000)" fill-rule="nonzero">
+            <path d="M33.6,75.9999807 C39.4265625,75.9321759 60,47.0901707 60,32.4820637 C60,17.8739566 48.1803174,6.03174603 33.6,6.03174603 C19.0196826,6.03174603 7.2,17.8739566 7.2,32.4820637 C7.2,47.0901707 27.7734375,76.0677855 33.6,75.9999807 Z" id="Oval" fill="#FFB6CE"></path>
+            <path d="M26.4,69.9682347 C32.2265625,69.9004299 52.8,41.0584247 52.8,26.4503176 C52.8,11.8422106 40.9803174,3.90798505e-14 26.4,3.90798505e-14 C11.8196826,3.90798505e-14 -3.55271368e-15,11.8422106 -3.55271368e-15,26.4503176 C-3.55271368e-15,41.0584247 20.5734375,70.0360395 26.4,69.9682347 Z" id="Oval" stroke="#000000" stroke-width="7.2"></path>
+            <ellipse id="Oval" stroke="#000000" stroke-width="7.2" fill="#FFFFFF" cx="26.4" cy="25.3333333" rx="10.8" ry="10.8571429"></ellipse>
+        </g>
+    </g>
+</svg>

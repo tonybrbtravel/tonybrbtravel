@@ -1,0 +1,214 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.header-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: @navHeight;
+  top: 0;
+  z-index: 999;
+  top: 0;
+  color: #fff;
+  transition: height 250ms ease-in-out, color 250ms ease-in-out,
+    background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+
+  &.sticky-navbar {
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
+    height: @navHeightCollapsed;
+  }
+
+  .header-content {
+    width: 100%;
+    position: relative;
+    padding: 0 @smallSpacer;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    z-index: 9100;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo-link {
+      margin-right: @smallSpacer;
+
+      img {
+        display: block;
+        width: auto;
+        height: 48px;
+      }
+    }
+
+    .text-anchor {
+      color: #ffffff;
+      background-color: @brbPink;
+      border-style: solid;
+      border-width: 1.5px;
+      margin-left: 18px;
+      font-size: 14px;
+      display: inline;
+      transition: box-shadow 250ms ease-in-out;
+      cursor: pointer;
+
+      .hide-on-extra-small {
+        display: none;
+      }
+
+      &.btn {
+        &.secondary {
+          border-color: currentColor;
+        }
+        border-color: red;
+        border-style: solid;
+        border-width: 1.5px;
+        padding: 8px 16px;
+        border-radius: 2px;
+        margin-left: 18px;
+        font-size: 14px;
+        transition: box-shadow 250ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+        box-shadow: none;
+      }
+
+      @media screen and (min-width: 425px) {
+        display: inline;
+      }
+
+      @media (max-width: 769px) {
+        display: none;
+      }
+    }
+
+    .div-block {
+      display: flex;
+      align-items: center;
+    }
+
+    .div-block.top-nav {
+      flex-grow: 1;
+      min-width: 0;
+      justify-content: space-between;
+    }
+
+    .hamburger-wrapper {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: auto;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @media screen and (min-width: @mediumPoint) {
+        display: none;
+      }
+
+      .hamburger-menu {
+        position: relative;
+        color: inherit;
+        width: 30px;
+        transition: width 250ms ease-in-out;
+
+        &.open {
+          color: @brbPink;
+          width: 0;
+          &::before,
+          &::after {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top 250ms ease-in-out, transform 250ms ease-in-out;
+            background-color: @brbPink;
+          }
+          &::after {
+            top: 0;
+            transform: rotate(135deg);
+          }
+        }
+
+        &,
+        &::before,
+        &::after {
+          height: 3px;
+          background-color: #fff;
+        }
+
+        &::before,
+        &::after {
+          width: 30px;
+          position: absolute;
+          content: "";
+          top: -8px;
+          left: 0;
+          transform: none;
+          transition: top 250ms ease-in-out, transform 250ms ease-in-out;
+        }
+
+        &::after {
+          top: 8px;
+          transform: none;
+        }
+      }
+    }
+
+    .header-links {
+      display: none;
+      font-size: .9rem;
+      white-space: nowrap;
+
+      a {
+        color: #ffffff;
+        margin-right: @smallSpacer;
+        white-space: nowrap;
+        display: inline-block;
+        transition: color 250ms ease-in-out;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          border-bottom: 1px solid currentColor;
+        }
+      }
+
+      @media screen and (min-width: @mediumPoint) {
+        display: block;
+      }
+
+      // Font size tweaks here to avoid overlap with buttons
+      @media screen and (min-width: 850px) {
+        font-size: 1rem;
+      }
+    }
+
+    &.solid {
+      .hamburger-menu,
+      .hamburger-menu::before,
+      .hamburger-menu::after {
+        background-color: @brbPink;
+      }
+
+      .header-links a {
+        color: @brbBlue;
+        text-shadow: none;
+      }
+    }
+  }
+}

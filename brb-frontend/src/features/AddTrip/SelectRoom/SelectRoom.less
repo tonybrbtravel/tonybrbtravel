@@ -1,0 +1,39 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+& {
+  .select-hotelRoom {
+    max-width: 720px;
+    .brb-checkbox-hotelRoom {
+      flex-wrap: wrap !important;
+      display: flex;
+      width: 80%;
+    }
+    .dateRange-save-button {
+      text-align: center;
+      padding-top: 20px;
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      background: #fff;
+      left: 0;
+  }
+  .scroller-div {
+    height: 300px;
+    overflow-y: auto;
+  }
+  @media (max-width: 767px) {
+    .hide-in-mobile {
+      display: none;
+    }
+  }
+  }
+}

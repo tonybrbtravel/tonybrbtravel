@@ -1,0 +1,502 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+  .brb-banner {
+    position: relative;
+  }
+
+  @media @tablet-down {
+    .brb-subscribe {
+      height: 100%;
+      display: flex !important;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+  }
+
+  .brb-container,
+  .brb-grid {
+    @media @tablet-down {
+      height: 100%;
+    }
+  }
+
+  .brb-subscribe-header {
+    @media @tablet-down {
+      padding: 15px;
+      .banner-heading {
+        font-family: "CircularStdBold" !important;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .brb-subscribe-row {
+    @media @tablet-down {
+      height: 100%;
+    }
+  }
+
+  .subscribe_btn {
+    @media @tablet-down {
+      width: 80%;
+    }
+  }
+
+  .banner-heading {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+    font-weight: bold;
+
+    strong {
+      color: @brbPink;
+    }
+
+    @media @tablet-down {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .brb-swiper-slider-navigation {
+    background: @brbOffwhite;
+  }
+
+  .brb-our-promise {
+    padding: 0 !important;
+    background-color: @brbOffwhite;
+  }
+
+  &.banner-text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff9f8;
+    max-width: 530px;
+  }
+
+  &.chkbox_content {
+    padding-left: 0px;
+    padding-top: 10px;
+
+    select {
+      color: #000;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p.totalHeading {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      padding: 0;
+      // padding-left: 2em;
+      @media (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #fff9f8;
+      position: relative;
+      padding-left: 2em;
+      margin-bottom: @smallSpacer;
+
+      &:before {
+        content: "";
+        background-image: url("../../images/icons/checkbox.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 0.25em;
+        height: 1.5em;
+        width: 1.5em;
+        // padding-top:
+        display: block;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  /** Monthly Subscription Block **/
+
+  &.monthly_subscription {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    height: 100%;
+
+    .banner_rect {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-evenly;
+      /* text-align: center; */
+      padding: 15px;
+
+      p {
+        color: #fff9f8;
+        line-height: 148.02%;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+
+    .margin,
+    .margin-brb {
+      background: @brbBlue;
+      border: 1px solid #000000;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.02em;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #fff9f8;
+    }
+
+    .margin {
+      height: 101px;
+    }
+
+    .margin-brb {
+      height: 90px;
+    }
+
+    .hotel,
+    .hotel-brb {
+      background: #d9dfec;
+      border: 1px solid #000000;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: @brbPink;
+      justify-content: center;
+    }
+
+    .hotel {
+      height: 190px;
+    }
+
+    .hotel-brb {
+      height: 148px;
+    }
+
+    .return_flights,
+    .return_flights_brb {
+      background: #fff9f8;
+      border: 1px solid #000000;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #000000;
+      justify-content: center;
+    }
+
+    .return_flights {
+      height: 193px;
+    }
+
+    .return_flights_brb {
+      height: 153px;
+    }
+
+    .your_savings,
+    .your_savings_brb {
+      background: @brbPink;
+      border: 1px solid #000000;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #fff9f8;
+      justify-content: center;
+    }
+
+    .your_savings {
+      height: 101px;
+    }
+
+    .your_savings_brb {
+      height: 50px;
+    }
+  }
+
+  &.monthly_subscription_mobile {
+    .brb_head {
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .margin_brb_mobile {
+      display: flex;
+      height: 44px;
+      font-size: 9px;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+      @media @tablet-down {
+        margin-top: 20px;
+      }
+    }
+
+    .brb_marging,
+    .site_margin {
+      background: @brbBlue;
+      color: #fff9f8;
+      padding: 10px 0px;
+    }
+
+    .brb_hotel,
+    .site_hotel {
+      background: #d9dfec;
+      color: @brbPink;
+      padding: 10px 0px;
+    }
+
+    .brb_flight,
+    .site_flight {
+      background: #fff;
+      color: #000;
+      padding: 10px 0px;
+    }
+
+    .savings {
+      background: @brbPink;
+      padding: 10px 0px;
+      color: #fff;
+      width: 68.96px;
+    }
+
+    .brb_marging {
+      width: 56.08px;
+    }
+
+    .brb_hotel {
+      width: 90.94px;
+    }
+
+    .brb_flight {
+      width: 103.07px;
+    }
+
+    .site_margin {
+      width: 106.1px;
+    }
+
+    .site_hotel {
+      width: 109.89px;
+    }
+
+    .site_flight {
+      width: 103.07px;
+    }
+  }
+
+  &.quality {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .column {
+      width: 50%;
+    }
+  }
+
+  &.best_hotels {
+    h1 {
+      font-size: 2rem;
+      line-height: 40px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+
+      /* Primary */
+
+      color: @brbBlue;
+
+      strong {
+        color: @brbPink;
+      }
+    }
+  }
+
+  &.travel_reviews {
+    background: @brbBlue;
+
+    .banner-heading {
+      width: 343px;
+    }
+
+    p {
+      width: 350px;
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: -0.02em;
+      color: @brbPink;
+    }
+
+    .read_more_review_btn {
+      /* Secondary */
+      a.btn-common.btn-primary {
+        padding: 14px 35px;
+        font-size: 16px;
+        color: #f01d52;
+        border: 1px solid @brbPink;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &.slide_header {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+
+    strong {
+      color: @brbPink;
+    }
+
+    text-align: left;
+
+    p {
+      color: @brbBlue;
+    }
+  }
+
+  .swiper-sub-header {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: @brbBlue;
+    text-align: left;
+  }
+
+  .slider_navigation {
+    text-align: left;
+    padding: 150px 100px 100px !important;
+  }
+
+  .our-promise {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+  }
+
+  .mt-0 {
+    margin-top: 0rem !important;
+  }
+
+  .diy_heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 148.02%;
+    /* identical to box height, or 36px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+
+    // padding:0px 18px;
+    margin-top: 30px;
+  }
+
+  .brb_heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 148.02%;
+    /* identical to box height, or 36px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+
+    padding: 0px 18px;
+    margin-top: 30px;
+  }
+
+  .euro-currency-logo {
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: absolute;
+    right: 5px;
+    top: -25px;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .banner-monthly div {
+      height: 44px;
+    }
+  }
+  .subscribe-travel {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    @media (max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+    .ui.button.brb-button {
+      min-height: 54px;
+      white-space: normal;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    .d-flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

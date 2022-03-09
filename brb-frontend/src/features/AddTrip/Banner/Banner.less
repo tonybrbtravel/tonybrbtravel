@@ -1,0 +1,234 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+
+.addtrip {
+  .banner-section {
+    background: url("../../../images/banner-img.png") !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    @media (max-width: 767px) {
+      min-height: auto;
+      background-position: center center !important;
+      padding-bottom: 60px;
+      padding-top: 20px;
+      background-attachment: inherit;
+    }
+  }
+}
+
+& {
+  .banner-section {
+    background: url(../../../images/banner-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @media (max-width: 767px) {
+      min-height: auto;
+      padding-bottom: 60px;
+      padding-top: 20px;
+      background-attachment: inherit;
+    }
+    @media (max-width: 767px) {
+      .logo {
+        width: 80px;
+      }
+    }
+    .trip-header {
+      margin-left: 0rem;
+      margin-right: 0rem;
+      @media (max-width: 767px) {
+        .row {
+          .center.aligned.column {
+            padding: 0px;
+          }
+        }
+      }
+    }
+
+    // .ui.grid:first-child {
+    //   padding-top: 8px;
+
+    //   .ui.text.menu {
+    //     margin: 0;
+
+    //     .item {
+    //       color: #fff !important;
+    //       margin-right: 10px;
+    //     }
+    //   }
+    // }
+
+    .row {
+      margin-top: 10px !important;
+
+      .column.bannerMenuItems {
+        @media (max-width: @mediumPoint) {
+        }
+      }
+
+      .column.bannerMenuItems {
+        @media (max-width: @mediumPoint) {
+          display: none !important;
+        }
+      }
+
+      .column.bannerButtons {
+        @media (max-width: @mediumPoint) {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .travel-profile {
+    .travel-profile-header.ui.grid {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .ui.grid:first-child {
+      padding-top: 8px;
+      @media (max-width: 767px) {
+        padding-top: 30px;
+      }
+
+      .ui.text.menu {
+        margin: 0;
+
+        .item {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .banner-container-swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: #fff;
+      font-size: 24px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      @media (min-width: @mediumPoint) {
+        font-size: 44px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .brb-swiper {
+      &__nav {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        cursor: pointer;
+        height: 100%;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--prev {
+          left: 10px;
+          @media (max-width: @mediumPoint) {
+            left: 5px;
+          }
+
+          .icon {
+            color: #cac8c7;
+          }
+        }
+
+        &--next {
+          right: 10px;
+          @media (max-width: @mediumPoint) {
+            right: 5px;
+          }
+
+          .icon {
+            color: #cac8c7;
+          }
+        }
+      }
+
+      &.swiper-button-disabled {
+        opacity: 0.3;
+      }
+    }
+
+    .brb-button {
+      width: 300px;
+
+      @media (max-width: @mediumPoint) {
+        width: 250px;
+      }
+
+      small {
+        display: block;
+        justify-content: center;
+      }
+    }
+
+    .swiper-pagination {
+      text-align: center;
+      transition: 300ms opacity;
+      transform: translate3d(0, 0, 0);
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      .swiper-pagination-bullet {
+        background: none;
+        font-size: 26px;
+        color: #849194;
+        width: auto;
+        margin: 0 8px;
+        display: table;
+        opacity: 1;
+        @media (max-width: @mediumPoint) {
+          font-size: 14px;
+        }
+
+        &.swiper-pagination-bullet-active {
+          color: #fff;
+          border: 0px;
+          &::after {
+            background: #fff;
+          }
+        }
+
+        &::after {
+          content: "";
+          background: #849194;
+          width: 100%;
+          height: 6px;
+          border-radius: 32px;
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

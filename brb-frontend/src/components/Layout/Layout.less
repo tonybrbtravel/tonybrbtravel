@@ -1,0 +1,350 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.back-image {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+
+.sign-up {
+  .swiper-wrapper {
+    padding-bottom: 40px;
+  }
+  .ui.form .success.message,
+  .ui.form .warning.message,
+  .ui.form .error.message {
+    display: block;
+  }
+
+  .ui.checkbox label {
+    padding-left: 50px !important;
+  }
+
+  .sign-in {
+    display: none;
+  }
+
+  color: white;
+
+  & .swiper-container {
+    padding-top: 16%;
+    min-height: 75vh;
+
+    & .swiper-pagination {
+      text-align: start;
+
+      & .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      & .swiper-pagination-bullet-active {
+        background-color: #ffffff;
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  & .ui.segment {
+    width: 429px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  & .swiper-header {
+    font-size: 2.5rem !important;
+    color: white !important;
+    font-weight: @bold;
+    @media (min-width: 1024px) {
+      width: 445px;
+    }
+  }
+
+  & .swiper-sub-header {
+    font-size: 18px;
+    font-weight: 700 !important;
+    color: white !important;
+
+    span {
+      color: @brbPink;
+    }
+  }
+
+  .content {
+    border-top: 0 !important;
+  }
+
+  & .content:nth-child(2) {
+    padding-top: 0;
+  }
+
+  & .ui.card {
+    // box-shadow: none;
+    // width: 342px;
+    // margin-left: 0 !important;
+    // margin-right: 0 !important;
+
+    & .content {
+      padding-top: 0;
+      & .header {
+        font-size: 2rem !important;
+        margin: 0px 0 12px 0 !important;
+
+      }
+    }
+  }
+
+  & .google.button {
+    background-color: #4285f4 !important;
+    font-size: @small !important;
+    width: 100%;
+    height: 40px;
+    font-weight: @normal;
+
+    & i.google {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  & .facebook-button {
+    width: 60px;
+    height: 40px;
+    font-size: @small !important;
+    margin-left: 12px;
+
+    & i.facebook {
+      width: 18px;
+      height: 18px;
+      top: -1px !important;
+      position: relative !important;
+      left: 4px !important;
+      margin-right: 0px !important;
+    }
+  }
+
+  & .terms-conditions-container {
+    display: flex;
+
+    .terms-conditions {
+      color: black;
+      font-size: @tiny;
+      margin-left: 5px;
+      max-width: 318px;
+      line-height: 12px;
+
+      & a {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    .ui.checkbox {
+      width: 30px;
+    }
+  }
+
+  .signup-submit {
+    width: 100%;
+    height: 53px;
+    font-size: @large;
+  }
+}
+
+.ui.header > .image:not(.icon),
+.ui.header > img {
+  width: auto !important;
+  @media (max-width: 767px) {
+    width: 50px !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .mySubscription h2.ui.header .profile-image.ui.circular.image {
+    width: 76px!important;
+    height: 76px!important;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+a.btn-common.btn-primary.mySubscribeBtn {
+  .icon {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: @smallPoint) {
+  .swiper-column,
+  .already-member {
+    display: none !important;
+  }
+
+  .sign-up-banner .ui.image {
+    margin-left: 0;
+    width: 80px;
+    opacity: 0.7;
+  }
+
+  .sign-up .google.button {
+    width: calc(100% - 70px);
+    height: 44px !important;
+    color: #ffffff;
+  }
+
+  .sign-up .facebook-button {
+    height: 43px;
+  }
+
+  .sign-up .ui.card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .sign-up .signup-submit {
+    width: 100%;
+    height: 53px;
+  }
+
+  .sign-in {
+    display: flex !important;
+    font-size: @medium !important;
+    margin-top: 13px;
+    justify-content: center;
+
+    & div {
+      color: black;
+    }
+
+    & a {
+      color: @brbPink;
+      margin-left: 5px;
+      font-size: @medium !important;
+    }
+  }
+
+  .ui.grid > .stackable.stackable.row > .column {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: @mediumPoint) {
+  .sign-up-banner {
+    margin-top: 18px;
+  }
+
+  .sign-up {
+    padding-bottom: 0;
+    @media (max-width: 767px) {
+      .ui.button.brb-button {
+        width: 100%;
+      }
+    }
+  }
+
+  .ui.stackable.grid > .wide.column {
+    padding: 0 !important;
+    margin-bottom: 100px !important;
+  }
+
+  .ui.form input:not([type]),
+  .ui.form input[type="date"],
+  .ui.form input[type="datetime-local"],
+  .ui.form input[type="email"],
+  .ui.form input[type="number"],
+  .ui.form input[type="password"],
+  .ui.form input[type="search"],
+  .ui.form input[type="tel"],
+  .ui.form input[type="time"],
+  .ui.form input[type="text"],
+  .ui.form input[type="file"],
+  .ui.form input[type="url"] {
+    height: 43px;
+  }
+
+  .ui.grid > .row > img,
+  .ui.grid > .row > .column > img {
+    margin: 18px 0 16px 16px;
+    @media (max-width: 767px) {
+      margin: 16px 0px;
+    }
+  }
+
+  .sign-up .ui.segment {
+    width: 100% !important;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+
+  .image-card .ui.card .segment {
+    top: 126px !important;
+    @media (max-width: 400px) {
+      top: inherit !important;
+      bottom: 0;
+    }
+  }
+
+  .complete-profile-group.ui.cards > .card {
+    width: 100% !important;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .ui.centered.images,
+  .ui.centered.image {
+    margin: 0 0 0 20px !important;
+  }
+}
+.mytrip-timer-styles {
+
+  .swiper-pagination {
+    top: 0px;
+
+    & .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 1;
+      display: none;
+    }
+
+    & .swiper-pagination-bullet-active {
+      background: #000 !important;
+      border: none !important;
+      color: #fff;
+      display: inline-block;
+      width: 180px;
+      height: 25px;
+      border-radius: 0;
+      padding-top: 5px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 23%;
+  }
+
+  .swiper-button-next {
+    left: 68%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 15px;
+    color: #fff;
+    &::after {
+      font-size: 12px;
+    }
+  }
+
+}

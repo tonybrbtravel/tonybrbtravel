@@ -1,0 +1,32 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../theme.config";
+& {
+  .brb-pink-text {
+    display: inline-block;
+    color: @brbPink;
+    &.mini {
+      font-size: 10px;
+    }
+    &.tiny {
+      font-size: 12px;
+    }
+    &.small {
+      font-size: 14px;
+    }
+    &.big {
+      font-size: 16px;
+    }
+    &.large {
+      font-size: 18px;
+    }
+    &.huge {
+      font-size: 24px;
+    }
+    &.massive {
+      font-size: 48px;
+    }
+  }
+}

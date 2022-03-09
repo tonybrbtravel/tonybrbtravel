@@ -1,0 +1,412 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+.my-travel-savings {
+  background: #fff9f8;
+  .ui.circular.secondary.button.brb-button {
+    width: 300px;
+    @media (max-width: 767px) {
+      margin-bottom: 1rem;
+    }
+
+  }
+  .account-header {
+    margin-bottom: 0;
+    padding-left: 0 !important;
+    font-size: 1.5rem !important;
+  }
+  .account-balance {
+    margin-top: 0;
+    font-size: 2rem !important;
+    padding-left: 0 !important;
+  }
+  @media (max-width: 767px) {
+    .account-header {
+      margin: calc(2rem - 0.14285714em ) 0rem 0rem;
+      font-size: 24px !important;
+    }
+    .account-balance {
+      margin: 0rem 0rem 1rem;
+      font-size: 24px !important;
+    }
+
+
+  }
+  .caption {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    @media (max-width:600px) {
+      margin-top: 0;
+    }
+    p {
+      width:70%;
+      text-align: left;
+      color: @brbBlue;
+      font-size: 16px;
+      margin: 0;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        margin: 0px 0 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  .ui.header {
+    position: relative;
+    padding-left: 45px;
+    .content {
+      .brb-pink-text.small {
+        span {
+          text-decoration: underline;
+          font-weight: normal;
+          font-size: 12px;
+          @media (max-width: 767px) {
+            display: inherit;
+            font-size: 24px;
+            &.earn-points {
+              font-size: 12px;
+              white-space: nowrap;
+              position: absolute;
+              padding-left: 10px;
+            }
+          }
+          @media (max-width: 365px) {
+            &.earn-points {
+              padding-left: 0;
+            }
+
+          }
+          .question.circle {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .content {
+        padding-top: 3px;
+        font-size: 24px !important;
+
+        .brb-pink-text.small  {
+          font-size: 10px;
+          font-weight: normal;
+        }
+      }
+      img {
+        width: 35px !important;
+        height: 35px !important;
+      }
+    }
+    @media (max-width: 340px) {
+      .content {
+        position: relative;
+        .brb-pink-text.small  {
+          position: absolute;
+          top: 29px;
+          left: 14px;
+        }
+      }
+    }
+    img {
+      width: 49px !important;
+      height: 40px !important;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+
+  }
+  .expense-table {
+    width: 90%;
+    margin-top: 40px;
+    background: @white;
+    .expense-item:first-child {
+      padding-top: 30px;
+    }
+    .label {
+      text-align: start;
+    }
+    .expense-progress-bar {
+      display: flex;
+      justify-content: flex-start;
+      .keyframes(fade-in;{
+        0% { width: 0; }
+        100% { width: 100%; }
+        });
+
+      // .animation(fade-in 1s linear alternate);
+      .ui.small.progress {
+        width: 80%;
+        .bar {
+          height: 1.5rem;
+        }
+        &.red + span {
+          color: @brbPink !important;
+        }
+      }
+      span {
+        font-size: 16px;
+        position: absolute;
+        right: -50px;
+        @media (max-width: 767px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .ui.grey.progress .bar{
+    background-color: @brbBlue;
+  }
+  .ui.grey.progress .bar {
+    background-color: #979797;
+  }
+}
+@media (max-width: 600px) {
+  .my-travel-savings {
+    padding-top: 35px !important;
+    background-position: 90% bottom, -1000px 0 !important;
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+[data-tooltip] {
+  display: inline-block;
+  position: relative;
+  cursor: help;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  background: #fff9f8;
+}
+// // For Mobile
+// @media screen and (max-width: 600px) {
+//   .my-travel-savings {
+//     margin: auto;
+//     background-color: #fff;
+//     height: 687px;
+//     width: 539px;
+//     border: 1px solid red;
+//   }
+
+//   .my-travel-savings .title {
+//     display: block;
+//     margin-top: 26px;
+//     margin-left: 27.5px;
+//     margin-right: 29.5px;
+//   }
+
+//   .my-travel-savings .icon {
+//     display: inline-block;
+//     position: relative;
+//     // top: -14px;
+//   }
+
+//   .my-travel-savings .title-text {
+//     display: inline-block;
+//     margin-left: 12.5px;
+//     height: 30px;
+//   }
+
+//   .my-travel-savings .title-text h2 {
+//     margin: 0px;
+//     display: inline-block;
+//   }
+
+//   .my-travel-savings .help-icon {
+//     position: relative;
+//     top: -2px;
+//     margin-left: 2px;
+//     color: @brbPink;
+//   }
+
+//   .my-travel-savings .acc-balance {
+//     display: inline-block;
+//     vertical-align: top;
+//     margin-top: 20px;
+//   }
+
+//   .my-travel-savings .balance {
+//     margin: auto;
+//     margin-top: 0px;
+//     margin-left: 118px;
+//     width: 274px;
+//     height: 60px;
+//     text-align: center;
+//     // border:1px solid red;
+//   }
+
+//   .my-travel-savings .balance h2 {
+//     margin: 0px;
+//   }
+
+//   .my-travel-savings .expense-table {
+//     // border: 1px solid #f00;
+//     display: inline-block;
+//     width: 351px;
+//     height: 284.86px;
+//     margin-top: 38.39px;
+//     border-radius: 15.701px;
+//     position: relative;
+//     margin-left: 25px;
+//     padding-left: 40.33px;
+//     padding-top: 20px;
+//   }
+
+//   .my-travel-savings .expense-item {
+//     margin-bottom: 35.47px;
+//   }
+
+//   .my-travel-savings .expense-item .label {
+//     font-size: 16px;
+//     margin-bottom: 3.54px;
+//   }
+
+//   .my-travel-savings .expense-progress-bar .ui.progress {
+//     width: 186px;
+//     height: 15px;
+//     // border: 1px solid red;
+//     display: inline-block;
+//     margin: 0px;
+//   }
+
+//   .my-travel-savings .expense-item .progress-value {
+//     display: inline-block;
+//     margin-left: 20px;
+//   }
+
+//   .my-travel-savings .expense-progress-bar {
+//     display: inline;
+//   }
+
+//   .my-travel-savings .expense-progress-bar .bar {
+//     height: 20px;
+//   }
+
+//   .my-travel-savings .cta-btn {
+//     width: 243px;
+//     height: 53px;
+//     margin: auto;
+//     margin-top: 27.75px;
+//   }
+// }
+
+// // For Desktop
+// @media screen and (min-width: 600px) {
+//   .my-travel-savings {
+//     margin: auto;
+//     background-color: #fff9f8;
+//     height: 800px;
+//     width: 1441px;
+//   }
+
+//   .my-travel-savings .title {
+//     display: block;
+//     margin-left: 115px;
+//     padding-top: 96px;
+//   }
+
+//   .my-travel-savings .icon {
+//     display: inline-block;
+//     vertical-align: top;
+//   }
+
+//   .my-travel-savings .title-text {
+//     display: inline-block;
+//     margin-left: 10px;
+//     vertical-align: middle;
+//   }
+
+//   .title-text i {
+//     vertical-align: baseline !important;
+//     color: @brbPink;
+//     margin-left: 3.35px;
+//   }
+
+//   .my-travel-savings .acc-balance {
+//     display: inline-block;
+//     vertical-align: top;
+//   }
+
+//   .my-travel-savings .balance {
+//     margin-top: 17px;
+//     margin-left: 118px;
+//     width: 558px;
+//     height: 92px;
+//   }
+
+//   .my-travel-savings .balance h2 {
+//     text-align: center;
+//   }
+
+//   .my-travel-savings .balance h2:last-child {
+//     color: @brbPink;
+//   }
+
+//   .my-travel-savings .expense-table {
+//     // border: 1px solid #f00;
+//     display: inline-block;
+//     width: 536px;
+//     height: 435px;
+//     top: 56px;
+//     border-radius: 24px;
+//     position: relative;
+//     margin-left: 117.72px;
+//     padding-left: 61px;
+//     padding-top: 25px;
+//     font-size: 24px;
+//   }
+
+//   .expense-table .expense-item {
+//     margin-bottom: 55.6px;
+//   }
+
+//   .expense-table .expense-progress-bar {
+//     width: 284px;
+//     display: inline-block;
+//     margin-top: 11px;
+//     vertical-align: top;
+//   }
+
+//   .expense-table .progress-value {
+//     display: inline-block;
+//     vertical-align: top;
+//     margin-left: 30px;
+//     position: relative;
+//     top: 9px;
+//   }
+//   .my-travel-savings .cta-btn {
+//     width: 284px;
+//     height: 57px;
+//     margin-left: 253px;
+//     position: relative;
+//     top: -59px;
+//   }
+
+//   .expense-progress-bar {
+//     .progress {
+//       border-radius: 20px;
+
+//       .bar {
+//         border-radius: 20px;
+//         height: 30px;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,14 @@
+/*******************************
+         Site Overrides
+*******************************/
+h2.ui.header {
+    font-size: 2rem;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    span[color="red"] {
+      /* color: @brbPink; */
+      color: #a01fed;
+    }
+}

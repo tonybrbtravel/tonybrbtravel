@@ -1,0 +1,36 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../../../semantic-ui/theme.config";
+& {
+  .trip-types-banner {
+    height: 62px;
+    margin-bottom: 49px;
+    padding-top:50px !important;
+
+    & .ui.image {
+      width: 106px;
+      margin-left: 58px;
+      height: 62px;
+    }
+    & .already-member {
+      & h5.ui.header {
+        color: white;
+        display: inline-block;
+        font-size: @small;
+        margin-right: 17px;
+
+      }
+      & .brb-button {
+        margin-right: 51px !important;
+      }
+    }
+  }
+}

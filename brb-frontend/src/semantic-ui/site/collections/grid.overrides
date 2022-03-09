@@ -1,0 +1,21 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@media screen and (max-width: 767px) {
+.ui.grid > .column:not(.row) {
+                        width: 50% !important;
+                    }
+                    }
+
+@media screen and (min-width: 768px) {
+.ui.grid > .column:not(.row) {
+                        width: 50% !important;
+                    }
+                    }
+
+@media screen and (min-width: 1024px) {
+.ui.grid > .column:not(.row) {
+                        width: 33.33333% !important;
+                    }
+                    }

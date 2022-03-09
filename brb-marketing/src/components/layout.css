@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'BrushUp';
+  src: url('../fonts/3636CE_0_0.eot');
+  src: url('../fonts/3636CE_0_0.woff2') format('woff2'),
+    url('../fonts/3636CE_0_0.woff') format('woff'),
+    url('../fonts/3636CE_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Circular';
+  font-display: swap;
+  src: url('../fonts/CircularStd-Book.eot');
+  src: url('../fonts/CircularStd-Book.woff') format('woff'),
+    url('../fonts/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular';
+  font-display: swap;
+  src: url('../fonts/CircularStd-Black.eot');
+  src: url('../fonts/CircularStd-Black.woff') format('woff'),
+    url('../fonts/CircularStd-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  color: inherit;
+  transition: font-size 0.2s;
+  font-family: Circular, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*::selection {
+  background-color: #ffeb34;
+    color: black;
+    opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@keyframes simple-animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.simple-animate-in {
+  animation-name: simple-animate-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+}
+
+.simple-animate-in-triggered {
+  animation-play-state: running;
+}

@@ -1,0 +1,195 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+& {
+  .complete-profile {
+    color: #fff;
+    padding-top: 30px !important;
+
+    @media (min-width: @medium) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (max-width: 767px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .ui.divider {
+      border-bottom: 1px dashed rgba(238, 241, 246, 20%);
+    }
+    & .header {
+      color: #fff;
+    }
+
+    & .sub-header {
+      padding-top: 10px;
+      font-size: 16px;
+      @media (max-width: 767px) {
+        max-width: 100%;
+        font-size: 1rem;
+      }
+    }
+
+    .progress {
+      background-color: #fff;
+      height: 12px;
+    }
+    .profile-completion {
+      padding-right: 1em;
+      padding-left: 1em;
+      float: right;
+      max-width: 440px;
+      width: 100%;
+
+      .ui.grid > .column:not(.row) {
+        padding-bottom: 0;
+      }
+    }
+    .TravelProfileProgressBar {
+      font-size: 18px;
+      .column {
+        padding-left: 0 !important;
+      }
+      img {
+        position: relative;
+        top: -9px;
+        width: 35px !important;
+      }
+    }
+
+    // .column.TravelProfileProgressBar {
+    //   @media (min-width: @medium) {
+    //     display: none;
+    //   }
+    // }
+  }
+
+  .selected-list-item {
+    margin-left: 38px;
+  }
+
+  .create-trip-phone {
+    input {
+      border: 1px solid @brbWhite !important;
+      color: @brbPink !important;
+      background: rgba(233, 69, 96, 0.12) !important;
+      border-radius: 2px !important;
+    }
+  }
+
+  .complete-profile-group {
+    &.ui.cards > .card {
+      width: calc(50% - 40px);
+      min-height: 100px !important;
+      border-radius: 6px;
+      margin: 20px;
+
+      @media (min-width: 768px) {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: calc(50% - 20px);
+
+        &:nth-child(2n + 2) {
+          margin-right: 0;
+        }
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+
+      }
+
+      @media (max-width: 767px) {
+        margin: 10px 0 10px;
+        min-height: auto !important;
+        padding: 10px;
+        .content {
+          padding: 0 0 5px;
+        }
+      }
+
+      & .custom-header {
+        font-size: @big;
+        padding-bottom: 1rem;
+        padding-left: 35px;
+        padding-right: 35px;
+        position: relative;
+
+        span {
+          margin-top: 5px;
+          display: inline-block;
+          color: @brbBlue;
+          font-weight: bold;
+        }
+
+        img:first-child {
+          margin-right: 20px;
+          position: absolute;
+          left: 0;
+        }
+
+        img:last-child {
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      & .image {
+        width: 25px;
+        height: 30px;
+        color: @brbPink;
+        cursor: pointer;
+        // margin-right: 5%;
+      }
+
+      & .label {
+        color: @brbPink;
+        background-color: rgba(233, 69, 96, 0.15);
+        font-weight: @normal;
+        @media (max-width: 767px) {
+          margin-bottom: 4px;
+        }
+      }
+
+      & .count-label {
+        background-color: transparent;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      & .target-link {
+        color: black !important;
+        text-decoration: underline;
+      }
+    }
+
+    .ui.cards > .card,
+    .ui.card {
+      background: @brbWhite;
+
+      &.incomplete {
+        outline: 2px solid @brbPink;
+        box-shadow: @neonBrbPink;
+      }
+    }
+  }
+
+  .react-tel-input .flag-dropdown.invalid-number {
+    background: #d79f9f;
+    border: 1px solid @brbPink;
+  }
+
+  .react-tel-input .form-control.invalid-number {
+    border: 1px solid @brbPink;
+    background-color: #fcdee1;
+    border-left-color: #cacaca;
+  }
+}

@@ -1,0 +1,147 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.myAccountButtons {
+  display: none;
+  font-size: 0.8rem !important;
+  flex-shrink: 1;
+  min-width: 0;
+
+  @media screen and (min-width: @mediumPoint) {
+    display: flex;
+  }
+
+  @media screen and (min-width: @largePoint) {
+    font-size: 1rem !important;
+  }
+
+  .points-button {
+    white-space: nowrap;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .account-dropdown {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .my-account-dropdown {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 10em;
+    margin-left: 16px;
+    font-size: 1em;
+    padding: 8px 25px 10px 10px;
+    height: 46px;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    // max-width: 20em;
+
+    > .menu-trigger {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: @tinySpacer;
+      position: relative;
+      top: 2px;
+      color: @brbBlue;
+
+      > img.ui.avatar.image {
+        object-fit: cover;
+        margin-right: @tinySpacer;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    > .dropdown.icon:before {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 20px;
+      background: url("../../images/icons/selectChevron.svg") no-repeat !important;
+      background-size: 15px !important;
+      position: absolute;
+      top: 2px;
+    }
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .dropdown-menu {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding-top: 10px;
+      // margin-top: 7px;
+      width: 100%;
+      .item:hover {
+        background: @brbPink !important;
+        color: #fff;
+      }
+      .active.item {
+        background: @brbPink !important;
+        color: #fff;
+      }
+    }
+
+    .dropdown-menu:before {
+      content: "";
+      content: none;
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 14px;
+      top: -7px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #fff;
+    }
+  }
+
+  button {
+    background-color: white !important;
+    padding: 0.25em 0.5em !important;
+    font-size: 1em !important;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    }
+  }
+}
+
+.my-account-dropdown {
+  background: white;
+  color: #686868;
+  border: 1px solid white;
+  padding: 8px 0px 0px 0px;
+  width: auto;
+  height: 55px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 19px;
+    background: url("../../images/icons/dropdown-arrow.png") no-repeat 0 0;
+    width: 14px;
+    height: 7px;
+  }
+}
+
+.ui.dropdown > .dropdown.icon:before {
+  content: none;
+  margin-left: 13px;
+}

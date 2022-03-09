@@ -1,0 +1,48 @@
+/*******************************
+            Theme
+*******************************/
+
+/* Define type and element to help locate theme files */
+@type: "element";
+@element: "button";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+.brb-checkBox-button.ui.compact.segment {
+  margin-left: 0;
+  margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 5px !important;
+  border: 1px solid @brbPink;
+
+  &.primary {
+    padding: 8px !important;
+    @media (max-width: 767px) {
+      padding: 5px 8px!important;
+      margin-right: 2px;
+    }
+  }
+
+  &.secondary {
+    padding:8px !important;
+    @media (max-width: 767px) {
+      padding: 5px 10px!important;
+      margin-right: 2px;
+    }
+  }
+
+  & .ui.basic.label {
+    border: none !important;
+    color: @brbPink;
+  }
+
+  &.checked {
+    background: linear-gradient(0deg, rgba(233, 69, 96, 0.3), rgba(233, 69, 96, 0.3)),
+      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+  }
+}

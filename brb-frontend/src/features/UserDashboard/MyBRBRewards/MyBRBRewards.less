@@ -1,0 +1,156 @@
+@type: "global";
+@element: "site";
+
+// semantic ui replacement of import
+@import (multiple) "../../../semantic-ui/theme.config";
+.my-brb-rewards {
+  margin: auto;
+  background: @brbBlue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (max-width: 600px) {
+    margin: auto;
+    background: @brbBlue;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ui.grid > .row {
+    padding-bottom: 0;
+  }
+  .ui.orange.ribbon.label {
+    width: 100px;
+    top: 28px;
+    z-index: 99;
+    left: 100%;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    text-align: right;
+    position: absolute;
+    &::after {
+      display: none;
+    }
+  }
+  .ui.segment {
+    text-align: center;
+    font-weight: 700;
+  }
+  .reward-info {
+    display: flex;
+    max-width: 500px;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 16px;
+    @media (max-width: 767px) {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  .ui.card {
+    box-shadow: none;
+    background: none !important;
+    position: relative;
+    svg {
+      position: absolute;
+      top: 18px;
+      right: 0px;
+      z-index: 9;
+    }
+    .lock-symbol {
+      top: 32px;
+      right: 110px;
+    }
+    .content {
+      padding: 0 !important;
+      //font-family: Circular Std;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+
+      .description {
+        //font-family: Circular Std;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 20px;
+        color: #000000 !important;
+      }
+    }
+
+    h2.ui.header {
+      position: absolute !important;
+      bottom: 0;
+      left: 0;
+      z-index: 101;
+      color: white;
+      text-align: start;
+      padding: 8px 15px;
+      font-size: 2rem !important;
+      padding: 8px 15px;
+      .sub.header {
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px 0;
+      }
+      @media (max-width: 767px) {
+        font-size: 18px !important;
+      }
+    }
+
+    .image-height {
+      border-radius: 3px;
+      overflow: hidden;
+      border: 1px Solid @brbPink;
+      padding: 2px;
+      border-radius: 5px;
+      height: 350px;
+      &:before {
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
+      }
+      &::after {
+          content: '';
+          position: absolute;
+          width: 98%;
+          height: 99%;
+          left: 0;
+          top: 0;
+          border: 3px solid @brbBlue;
+          z-index: 9999999999;
+          border-radius: 5px;
+          overflow: hidden;
+          height: 348px;
+      }
+      img {
+        height: auto !important;
+        width: 100%;
+
+      }
+    }
+    .image-opacity {
+      // opacity: 0.5;
+      filter: brightness(0.5);
+    }
+
+    & .selected-wrapper {
+      position: absolute;
+      z-index: 100;
+      left: 46%;
+      top: 47%;
+      font-size: 1.3em;
+    }
+  }
+  .swiper-slide {
+    width: 30%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}

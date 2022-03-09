@@ -1,0 +1,90 @@
+/* Define type and element to help locate theme files */
+@type: "global";
+@element: "site";
+
+/* Processes Variable Inheritance */
+// semantic ui replacement of import
+@import (multiple) "../../semantic-ui/theme.config";
+
+footer {
+  background: #FFF9F8;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  @media (max-width: 767px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  p {
+    font-size: 12px;
+    color: #808080;
+    margin-top: 25px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  .footer-container {
+    display: flex;
+    font-size: 14px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      font-size: 12px;
+    }
+    img {
+      width: 85px;
+    }
+    h4 {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size:16px;
+    }
+    .buffer-space {
+      margin-top: 35px;
+      @media (max-width: 767px) {
+        .footer-image {
+          margin: 0 auto;
+        }
+      }
+    }
+    ul {
+      width: 25%;
+      list-style: none;
+      padding: 0 25px 0 0;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+      }
+      li a {
+        color: @brbPink;
+        .footer-logo {
+          width: 160px;
+        }
+      }
+
+      .outline-btn {
+        color: @brbPink;
+        border: 1px solid @brbPink;
+        background: #fff;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 25px;
+        padding: 5px 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 3px;
+        font-weight: bold;
+        &:hover {
+          background: @brbPink;
+          color: #fff;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .footer-logo {
+      width: 84px;
+      margin-top: 80px;
+    }
+  }
+
+}

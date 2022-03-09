@@ -1,0 +1,106 @@
+@type: "global";
+@element: "site";
+@import (multiple) "../../../semantic-ui/theme.config";
+
+& {
+  .TripTypes-banner {
+    position: relative;
+
+    & h5.ui.header {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #000000;
+      margin-top: 0;
+
+      line-height: 1;
+      margin-bottom: .5rem;
+
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top:0;
+      }
+
+      .colorName {
+        color: @brbPink;
+      }
+    }
+
+    .pb-0 {
+      padding-bottom: 0 !important;
+    }
+
+    .paragraphStyling {
+      //font-family: Circular Std;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 30px;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 18px;
+
+      }
+
+    }
+
+    .red-text {
+      color: @brbPink;
+      font-size: 16px;
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  .destinationSelectionStyle {
+    p.headingStyle {
+      //font-family: "Circular Std";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: @brbPink;
+      // margin-top: 50px;
+    }
+  }
+
+  p.headingStyle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: @brbPink;
+  }
+
+  .text-banner {
+    & h5.ui.header {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #000000;
+      .colorName {
+        color: @brbPink;
+      }
+    }
+    .paragraphStyling {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+
+  .brb-icon {
+    color: rgba(233, 69, 96, 0.3);
+    font-size: @huge  !important;
+    vertical-align: top !important;
+    cursor: pointer;
+    margin-left: 5px !important;
+
+    &.active {
+      color: @brbPink;
+    }
+  }
+}

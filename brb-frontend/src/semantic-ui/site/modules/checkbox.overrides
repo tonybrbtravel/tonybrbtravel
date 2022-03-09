@@ -1,0 +1,130 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.checkbox,
+.ui.radio.checkbox {
+  font-size: @medium;
+  line-height:@checkboxRadioHeightWidth;
+}
+
+.ui.checkbox .box:before,
+.ui.checkbox label:before,
+.ui.radio.checkbox .box:before,
+.ui.radio.checkbox label:before {
+  width: @checkboxRadioHeightWidth;
+  height: @checkboxRadioHeightWidth;
+  border: 1px solid @brbPink;
+  opacity: 1;
+  @media (max-width: 767px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.ui.radio.checkbox input:checked,
+.ui.radio.checkbox input:checked ~ label:after {
+  width: @checkboxRadioHeightWidth;
+  height: @checkboxRadioHeightWidth;
+}
+
+
+.ui.checkbox .box:hover::before, .ui.checkbox label:hover::before {
+    background: #FFFFFF;
+    border-color: @brbPink;
+}
+
+.ui.checkbox input:checked ~ .box:before, .ui.checkbox input:checked ~ label:before {
+    background: #FFFFFF;
+    border-color:@brbPink;
+}
+.ui.checkbox input:focus ~ .box:before, .ui.checkbox input:focus ~ label:before {
+    background: #FFFFFF;
+    border-color: @brbPink;
+}
+
+.ui.checkbox input:checked ~ .box:after,
+.ui.checkbox input:checked ~ label:after {
+  width: @checkboxRadioHeightWidth;
+  height: @checkboxRadioHeightWidth;
+    opacity: 1;
+    color: @brbPink;
+    /*
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS40MTQiIGhlaWdodD0iOC4wODIiPgogIDxwYXRoIGQ9Ik0xMC43MDcuNzA3TDMuODMyIDcuNTgyLjcwNyA0LjQ1NyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+)
+    no-repeat center;
+    */
+    @media (max-width:767px) {
+      width: 16px;
+      height: 16px;
+    }
+}
+
+.ui.toggle.checkbox .box:before,
+.ui.toggle.checkbox label:before {
+  height: @checkboxRadioHeightWidth;
+}
+
+.ui.toggle.checkbox .box:after,
+.ui.toggle.checkbox label:after
+{
+  width: @checkboxRadioHeightWidth;
+  height: @checkboxRadioHeightWidth;
+}
+
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:before, .ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:before, .ui.checkbox input:checked:focus ~ .box:before, .ui.checkbox input:checked:focus ~ label:before {
+    background: #FFFFFF;
+    border-color: @brbPink;
+}
+.ui.checkbox input:focus ~ label{
+  color:@brbPink;
+}
+.ui.checkbox input:checked ~ .box:after, .ui.checkbox input:checked ~ label:after{
+  color:@brbPink !important;
+  opacity: 1;
+}
+ .ui.checkbox input:checked ~ label{
+   color:@brbPink;
+ }
+
+.ui.checkbox input.hidden + label {
+ color:#e94560;
+}
+
+.excludedDestinations  {
+  .ui.checkbox input:checked ~ .box:after, .ui.checkbox input:checked ~ label:after {
+    content: "\2715";
+    font-weight:bold;
+  }
+}
+
+@media (max-width: 767px) {
+  .trip-types-mobile-checkbox .ui.checkbox input[type="checkbox"] {
+      width: 145px;
+      height: 167px;
+      transform: translate(-18px, -100px);
+  }
+  .trip-types-mobile-checkbox .ui.checkbox .box:after, .ui.checkbox label:after {
+    top: -3px;
+  }
+  .trip-types-mobile-checkbox.ui.container {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    .image-card > .column {
+      padding: .5em !important;
+    }
+  }
+}
+
+.airport-preferences,
+.TripTypes-banner {
+    .ui.checkbox .box, .ui.checkbox label {
+      font-size: 1em;
+      padding-left: 28px;
+      @media (max-width: 767px) {
+        padding-left: 20px;
+      }
+    }
+  }
